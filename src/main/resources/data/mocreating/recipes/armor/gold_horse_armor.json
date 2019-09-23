@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " H",
+        "CC",
+        "LL"
+    ],
+
+    "key":
+    {
+        "H": { "item": "minecraft:golden_helmet" },
+        "C": { "item": "minecraft:golden_chestplate" },
+        "L": { "item": "minecraft:golden_leggings" }
+    },
+
+    "result": { "item": "minecraft:golden_horse_armor"}
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "XXX",
+    "###",
+    "###"
+  ],
+  
+  "key": {
+     "#": {
+      "item": "mocreating:skin_fold"
+     },
+     "X": {
+      "item": "mocreating:bone_hardend"
+     }
+  },
+  
+  
+  "result": {
+    "item": "mocreating:wing_fold"
+  }
+}

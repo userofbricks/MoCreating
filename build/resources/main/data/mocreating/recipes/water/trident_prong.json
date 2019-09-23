@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#",
+    "X#"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "mocreating:prismarine_stick"
+    }, 
+    "#": {
+      "item": "mocreating:prismarine_sharpened"
+    }
+  },
+  
+  "result": {
+    "item": "mocreating:trident_prong"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "#X#",
+    "###"
+  ],
+  
+  "key": {
+     "#": {
+      "item": "minecraft:bone"
+     },
+     "X": {
+      "item": "minecraft:diamond"
+     }
+  },
+  
+  
+  "result": {
+    "item": "mocreating:bone_hardend"
+  }
+}

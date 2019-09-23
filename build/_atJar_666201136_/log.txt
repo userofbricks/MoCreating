@@ -1,0 +1,5 @@
+Args: "--inJar", "/Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.0.102/forge-1.14.4-28.0.102-injected.jar", "--outJar", "/Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.0.102_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.0.102_mapped_snapshot_20190719-1.14.3.jar", "--logFile", "accesstransform.log", "--atFile", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/_atJar_666201136_/parent_at.cfg"
+Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/0.14.4/accesstransformers-0.14.4-fatjar.jar
+WorkDir: /Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/_atJar_666201136_
+Main: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================
