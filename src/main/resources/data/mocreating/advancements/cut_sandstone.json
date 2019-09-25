@@ -1,0 +1,39 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_stone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cut_sandstone"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:cut_sandstone"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "yellow uncrafting"
+        }
+    },
+    "requirements": [
+        [
+            "has_stone"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:sand/sandstone_uncrafting"
+        ]
+    },
+    "parent": "mocreating:sandstone"
+}

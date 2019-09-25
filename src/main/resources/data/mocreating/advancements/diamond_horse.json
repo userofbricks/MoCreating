@@ -1,0 +1,57 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
+        },
+        "saddle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:saddle"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:diamond_horse_armor"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Thats it!"
+        }
+    },
+    "requirements": [
+        [
+            "diamond"
+        ],
+        [
+            "saddle"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:armor/diamond_horse_armor",
+            "mocreating:armor/diamond_horse_armor2"
+        ]
+    },
+    "parent": "mocreating:gold_horse"
+}

@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "scraps": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "item": "mocreating:skin_scraps"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft 9 scraps"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:skin_fold"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Fold it up"
+        }
+    },
+    "requirements": [
+        [
+            "scraps"
+        ]
+    ],
+    "rewards": {
+        "experience": 5,
+        "recipes": [
+            "mocreating:end/skin_fold"
+        ]
+    },
+    "parent": "mocreating:skin_scraps"
+}

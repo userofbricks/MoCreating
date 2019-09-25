@@ -1,0 +1,36 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "enter": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "overworld",
+                "to": "the_nether"
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "in and out again but don't forget those resources"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Nether hub!"
+        }
+    },
+    "requirements": [
+        [
+            "enter"
+        ]
+    ],
+    "rewards": {
+        "experience": 1
+    },
+    "parent": "mocreating:water_lava"
+}

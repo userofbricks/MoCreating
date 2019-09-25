@@ -1,0 +1,70 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_bed": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:bed"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "dye any bed"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:white_bed"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Bed Time"
+        }
+    },
+    "requirements": [
+        [
+            "has_bed"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:universal_dyeing/white_bed",
+            "mocreating:universal_dyeing/orange_bed",
+            "mocreating:universal_dyeing/magenta_bed",
+            "mocreating:universal_dyeing/light_blue_bed",
+            "mocreating:universal_dyeing/yellow_bed",
+            "mocreating:universal_dyeing/lime_bed",
+            "mocreating:universal_dyeing/pink_bed",
+            "mocreating:universal_dyeing/gray_bed",
+            "mocreating:universal_dyeing/light_gray_bed",
+            "mocreating:universal_dyeing/cyan_bed",
+            "mocreating:universal_dyeing/purple_bed",
+            "mocreating:universal_dyeing/blue_bed",
+            "mocreating:universal_dyeing/brown_bed",
+            "mocreating:universal_dyeing/green_bed",
+            "mocreating:universal_dyeing/red_bed",
+            "mocreating:universal_dyeing/black_bed"
+        ]
+    },
+    "parent": "mocreating:universal_dyeing"
+}

@@ -1,0 +1,50 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_sand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:sand"
+                    }
+                ]
+            }
+        },
+        "has_red_sand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:red_sand"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "You found some sand"
+        },
+        "frame": "goal",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:sand"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Sandy"
+        }
+    },
+    "requirements": [
+        [
+            "has_sand",
+            "has_red_sand"
+        ]
+    ],
+    "rewards": {
+        "experience": 1
+    },
+    "parent": "mocreating:dirt"
+}

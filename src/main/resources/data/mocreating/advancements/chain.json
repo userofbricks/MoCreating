@@ -1,0 +1,55 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "string": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:string"
+                    }
+                ]
+            }
+        },
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_ingot"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:chainmail_chestplate"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Chain-em-up"
+        }
+    },
+    "requirements": [
+        [
+            "string"
+        ],
+        [
+            "iron"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:armor/chain_boots",
+            "mocreating:armor/chain_chestplate",
+            "mocreating:armor/chain_helmet",
+            "mocreating:armor/chain_leggings"
+        ]
+    },
+    "parent": "mocreating:organics"
+}

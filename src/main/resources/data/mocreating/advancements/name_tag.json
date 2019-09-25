@@ -1,0 +1,56 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "hook": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:tripwire_hook"
+                    }
+                ]
+            }
+        },
+        "paper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "minecraft:paper"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:name_tag"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Name it!"
+        }
+    },
+    "requirements": [
+        [
+            "hook"
+        ],
+        [
+            "paper"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:name_tag"
+        ]
+    },
+    "parent": "mocreating:spawn_eggs"
+}

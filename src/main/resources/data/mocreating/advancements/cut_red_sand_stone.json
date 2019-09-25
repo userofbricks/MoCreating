@@ -1,0 +1,42 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_stone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cut_red_sandstone"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Redsandstone from Cut Red Sandstone"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:cut_red_sandstone"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "red uncrafting"
+        }
+    },
+    "requirements": [
+        [
+            "has_stone"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:sand/red_sandstone_uncrafting"
+        ]
+    },
+    "parent": "mocreating:red_sand_stone"
+}

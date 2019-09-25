@@ -1,0 +1,43 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:skeleton_skull"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Dipped, Chared. What's the difference?"
+        }
+    },
+    "requirements": [
+        [
+            "skull"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/wither_skull",
+            "mocreating:smelting/wither_skull"
+        ]
+    },
+    "parent": "mocreating:skeleton_skull"
+}

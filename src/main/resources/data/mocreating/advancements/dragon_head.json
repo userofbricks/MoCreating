@@ -1,0 +1,72 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dragon_head"
+                    }
+                ]
+            }
+        },
+        "egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dragon_egg"
+                    }
+                ]
+            }
+        },
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "minecraft:obsidian"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Dragon Head Duplication"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:dragon_head"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Heads everywhere"
+        }
+    },
+    "requirements": [
+        [
+            "head"
+        ],
+        [
+            "egg"
+        ],
+        [
+            "obsidian"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:end/dragon_head"
+        ]
+    },
+    "parent": "mocreating:ender_egg"
+}

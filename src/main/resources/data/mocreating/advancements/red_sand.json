@@ -1,0 +1,55 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_sand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:red_sand"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "forge:dyes/red"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft some sand"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:red_sand"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "red sand"
+        }
+    },
+    "requirements": [
+        [
+            "has_sand"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:sand/red_sand"
+        ]
+    },
+    "parent": "mocreating:sand"
+}

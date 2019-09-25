@@ -1,0 +1,98 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "kill_ghast": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ghast"
+                }
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft all the spawn eggs"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:ghast_spawn_egg"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Eggs! Eggs! Eggs!"
+        }
+    },
+    "requirements": [
+        [
+            "kill_ghast"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/spawn_egg/spawn_egg_bat",
+            "mocreating:organics/spawn_egg/spawn_egg_blaze",
+            "mocreating:organics/spawn_egg/spawn_egg_cat",
+            "mocreating:organics/spawn_egg/spawn_egg_cave_spider",
+            "mocreating:organics/spawn_egg/spawn_egg_chicken",
+            "mocreating:organics/spawn_egg/spawn_egg_cod",
+            "mocreating:organics/spawn_egg/spawn_egg_cow",
+            "mocreating:organics/spawn_egg/spawn_egg_creeper",
+            "mocreating:organics/spawn_egg/spawn_egg_dolphin",
+            "mocreating:organics/spawn_egg/spawn_egg_donkey",
+            "mocreating:organics/spawn_egg/spawn_egg_drowned",
+            "mocreating:organics/spawn_egg/spawn_egg_eldar_guardian",
+            "mocreating:organics/spawn_egg/spawn_egg_enderman",
+            "mocreating:organics/spawn_egg/spawn_egg_endermite",
+            "mocreating:organics/spawn_egg/spawn_egg_evoker",
+            "mocreating:organics/spawn_egg/spawn_egg_fox",
+            "mocreating:organics/spawn_egg/spawn_egg_ghast",
+            "mocreating:organics/spawn_egg/spawn_egg_guardian",
+            "mocreating:organics/spawn_egg/spawn_egg_horse",
+            "mocreating:organics/spawn_egg/spawn_egg_husk",
+            "mocreating:organics/spawn_egg/spawn_egg_llama",
+            "mocreating:organics/spawn_egg/spawn_egg_magma_cube",
+            "mocreating:organics/spawn_egg/spawn_egg_mooshroom_cow",
+            "mocreating:organics/spawn_egg/spawn_egg_mule",
+            "mocreating:organics/spawn_egg/spawn_egg_ocelot",
+            "mocreating:organics/spawn_egg/spawn_egg_panda",
+            "mocreating:organics/spawn_egg/spawn_egg_parrot",
+            "mocreating:organics/spawn_egg/spawn_egg_phantom",
+            "mocreating:organics/spawn_egg/spawn_egg_pig",
+            "mocreating:organics/spawn_egg/spawn_egg_pillager",
+            "mocreating:organics/spawn_egg/spawn_egg_polar_bear",
+            "mocreating:organics/spawn_egg/spawn_egg_pufferfish",
+            "mocreating:organics/spawn_egg/spawn_egg_rabbit",
+            "mocreating:organics/spawn_egg/spawn_egg_ravenger",
+            "mocreating:organics/spawn_egg/spawn_egg_salmon",
+            "mocreating:organics/spawn_egg/spawn_egg_sheep",
+            "mocreating:organics/spawn_egg/spawn_egg_shulker",
+            "mocreating:organics/spawn_egg/spawn_egg_silverfish",
+            "mocreating:organics/spawn_egg/spawn_egg_skeleton_horse",
+            "mocreating:organics/spawn_egg/spawn_egg_skeleton",
+            "mocreating:organics/spawn_egg/spawn_egg_slime",
+            "mocreating:organics/spawn_egg/spawn_egg_spider",
+            "mocreating:organics/spawn_egg/spawn_egg_squid",
+            "mocreating:organics/spawn_egg/spawn_egg_stray",
+            "mocreating:organics/spawn_egg/spawn_egg_trader_llama",
+            "mocreating:organics/spawn_egg/spawn_egg_tropical_fish",
+            "mocreating:organics/spawn_egg/spawn_egg_turtle",
+            "mocreating:organics/spawn_egg/spawn_egg_vex",
+            "mocreating:organics/spawn_egg/spawn_egg_villager",
+            "mocreating:organics/spawn_egg/spawn_egg_vindicator",
+            "mocreating:organics/spawn_egg/spawn_egg_wandering_trader",
+            "mocreating:organics/spawn_egg/spawn_egg_witch",
+            "mocreating:organics/spawn_egg/spawn_egg_wither_skeleton",
+            "mocreating:organics/spawn_egg/spawn_egg_wolf",
+            "mocreating:organics/spawn_egg/spawn_egg_zombie_horse",
+            "mocreating:organics/spawn_egg/spawn_egg_zombie_pigman",
+            "mocreating:organics/spawn_egg/spawn_egg_zombie_villager",
+            "mocreating:organics/spawn_egg/spawn_egg_zombie_villager2",
+            "mocreating:organics/spawn_egg/spawn_egg_zombie"
+        ]
+    },
+    "parent": "mocreating:notch_apple"
+}

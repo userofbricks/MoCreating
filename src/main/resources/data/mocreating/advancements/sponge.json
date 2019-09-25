@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "wool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "item": "minecraft:yellow_wool"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:sponge"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "soak it up!"
+        }
+    },
+    "requirements": [
+        [
+            "wool"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/sponge"
+        ]
+    },
+    "parent": "mocreating:root"
+}

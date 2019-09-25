@@ -1,0 +1,62 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "red": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "item": "minecraft:red_mushroom"
+                    }
+                ]
+            }
+        },
+        "brown": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "item": "minecraft:brown_mushroom"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "cartable shroom blocks"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:red_mushroom_block"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "shroooooms"
+        }
+    },
+    "requirements": [
+        [
+            "red",
+            "brown"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/brown_mushroom_block",
+            "mocreating:organics/red_mushroom_block"
+        ]
+    },
+    "parent": "mocreating:organics"
+}

@@ -1,0 +1,59 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "wing": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "mocreating:wing"
+                    }
+                ]
+            }
+        },
+        "shell": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:shulker_shell"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "two wings and a sulker shell"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Finally!"
+        }
+    },
+    "requirements": [
+        [
+            "wing"
+        ],
+        [
+            "shell"
+        ]
+    ],
+    "rewards": {
+        "experience": 30,
+        "recipes": [
+            "mocreating:end/elytra"
+        ]
+    },
+    "parent": "mocreating:wing"
+}

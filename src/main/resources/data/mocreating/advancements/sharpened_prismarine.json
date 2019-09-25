@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "shards": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "minecraft:prismarine_shard"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "the start to the trident"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:prismarine_sharpened"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Another Long road"
+        }
+    },
+    "requirements": [
+        [
+            "shards"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/prismarine_sharpened"
+        ]
+    },
+    "parent": "mocreating:sponge"
+}

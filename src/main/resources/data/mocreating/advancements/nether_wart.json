@@ -1,0 +1,42 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:nether_wart_block"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "uncrafteble nether wart block"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:nether_wart"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Nether wart"
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:nether/nether_wart"
+        ]
+    },
+    "parent": "mocreating:nether"
+}
