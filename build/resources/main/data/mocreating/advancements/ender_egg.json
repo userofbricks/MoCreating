@@ -1,0 +1,59 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dragon_egg"
+                    }
+                ]
+            }
+        },
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "minecraft:obsidian"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Ender egg duplication"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:dragon_egg"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Thats a big egg"
+        }
+    },
+    "requirements": [
+        [
+            "obsidian"
+        ],
+        [
+            "egg"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:end/dragon_egg"
+        ]
+    },
+    "parent": "mocreating:end_portal"
+}

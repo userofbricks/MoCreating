@@ -1,0 +1,57 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "lava": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:lava_bucket"
+                    }
+                ]
+            }
+        },
+        "water": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:water_bucket"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Recipes out of water and lava"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:bucket"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Cool and Hot"
+        }
+    },
+    "requirements": [
+        [
+            "lava"
+        ],
+        [
+            "water"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:stone/cobblestone",
+            "mocreating:stone/stone",
+            "mocreating:stone/obsidian"
+        ]
+    },
+    "parent": "mocreating:root"
+}

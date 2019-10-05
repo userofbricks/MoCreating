@@ -1,0 +1,70 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:terracotta"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "colored terrocota"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:terracotta"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Terr-ific"
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:universal_dyeing/white_terracotta",
+            "mocreating:universal_dyeing/orange_terracotta",
+            "mocreating:universal_dyeing/magenta_terracotta",
+            "mocreating:universal_dyeing/light_blue_terracotta",
+            "mocreating:universal_dyeing/yellow_terracotta",
+            "mocreating:universal_dyeing/lime_terracotta",
+            "mocreating:universal_dyeing/pink_terracotta",
+            "mocreating:universal_dyeing/gray_terracotta",
+            "mocreating:universal_dyeing/light_gray_terracotta",
+            "mocreating:universal_dyeing/cyan_terracotta",
+            "mocreating:universal_dyeing/purple_terracotta",
+            "mocreating:universal_dyeing/blue_terracotta",
+            "mocreating:universal_dyeing/brown_terracotta",
+            "mocreating:universal_dyeing/green_terracotta",
+            "mocreating:universal_dyeing/red_terracotta",
+            "mocreating:universal_dyeing/black_terracotta"
+        ]
+    },
+    "parent": "mocreating:universal_dyeing"
+}

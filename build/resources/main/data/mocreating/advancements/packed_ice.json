@@ -1,0 +1,43 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_blue_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:blue_ice"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "uncraftable blue ice"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:blue_ice"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_blue",
+            "text": "hard ice"
+        }
+    },
+    "requirements": [
+        [
+            "has_blue_ice"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:ice/packed_ice"
+        ]
+    },
+    "parent": "mocreating:ice"
+}

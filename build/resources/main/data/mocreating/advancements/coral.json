@@ -1,0 +1,110 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "brain": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "tag": "mocreating:brain_coral"
+                    }
+                ]
+            }
+        },
+        "bubble": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "tag": "mocreating:bubble_coral"
+                    }
+                ]
+            }
+        },
+        "fire": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "tag": "mocreating:fire_coral"
+                    }
+                ]
+            }
+        },
+        "horn": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "tag": "mocreating:horn_coral"
+                    }
+                ]
+            }
+        },
+        "tube": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 9,
+                            "min": 9
+                        },
+                        "tag": "mocreating:tube_coral"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft-em"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:fire_coral_block"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Coral Blocks"
+        }
+    },
+    "requirements": [
+        [
+            "brain",
+            "bubble",
+            "fire",
+            "horn",
+            "tube"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/brain_coral_block",
+            "mocreating:water/bubble_coral_block",
+            "mocreating:water/fire_coral_block",
+            "mocreating:water/horn_coral_block",
+            "mocreating:water/tube_coral_block"
+        ]
+    },
+    "parent": "mocreating:sponge"
+}

@@ -1,0 +1,56 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "bone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 8,
+                            "min": 8
+                        },
+                        "item": "minecraft:bone"
+                    }
+                ]
+            }
+        },
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:bone_hardend"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "bones but hardened"
+        }
+    },
+    "requirements": [
+        [
+            "bone"
+        ],
+        [
+            "diamond"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:end/bone_hardend"
+        ]
+    },
+    "parent": "mocreating:skin_scraps"
+}

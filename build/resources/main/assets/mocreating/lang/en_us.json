@@ -1,4 +1,5 @@
 {
+	//Items
 	"item.mocreating.nether_dust": "Nether Dust",
 	"item.mocreating.nether_shard": "Nether Shard",
 	
@@ -12,5 +13,34 @@
 	"item.mocreating.prismarine_stick": "Prismarine Stick",
 	"item.mocreating.prismarine_sharpened": "Sharpened Prismarine",
 	"item.mocreating.trident_prong_holder": "Trident Prong Holder",
-	"item.mocreating.trident_prong": "Trident Prong"
+	"item.mocreating.trident_prong": "Trident Prong",
+	
+	//blocks
+	"block.mocreating.mycelium_acacia_planks": "Mycelium Acacia Planks",
+	"block.mocreating.mycelium_acacia_log": "Mycelium Acacia Log",
+	"block.mocreating.mycelium_birch_planks": "Mycelium Birch Planks",
+	"block.mocreating.mycelium_birch_log": "Mycelium Birch Log",
+	"block.mocreating.mycelium_bone_block": "Mycelium Bone Block",
+	"block.mocreating.mycelium_coarse_dirt": "Mycelium Coarse Dirt",
+	"block.mocreating.mycelium_dark_oak_planks": "Mycelium Dark Oak Planks",
+	"block.mocreating.mycelium_dark_oak_log": "Mycelium Dark Oak Log",
+	"block.mocreating.mycelium_jungle_planks": "Mycelium Jungle Planks",
+	"block.mocreating.mycelium_jungle_log": "Mycelium Jungle Log",
+	"block.mocreating.mycelium_nether_wart": "Mycelium Nether Wart",
+	"block.mocreating.mycelium_nether_quartz": "Mycelium Nether Quartz",
+	"block.mocreating.mycelium_netherrack": "Mycelium Netherrack",
+	"block.mocreating.mycelium_oak_planks": "Mycelium Oak Planks",
+	"block.mocreating.mycelium_oak_log": "Mycelium Oak Log",
+	"block.mocreating.mycelium_sponge": "Mycelium Sponge",
+	"block.mocreating.mycelium_spruce_planks": "Mycelium Spruce Planks",
+	"block.mocreating.mycelium_spruce_log": "Mycelium Spruce Log",
+	"block.mocreating.mycelium_wet_sponge": "Mycelium Wet Sponge",
+	
+	"block.mocreating.mycelium_stripped_acacia_log": "Mycelium Stripped Acacia Log",
+	"block.mocreating.mycelium_stripped_birch_log": "Mycelium Stripped Birch Log",
+	"block.mocreating.mycelium_stripped_dark_oak_log": "Mycelium Stripped Dark Oak Log",
+	"block.mocreating.mycelium_stripped_jungle_log": "Mycelium Stripped Jungle Log",
+	"block.mocreating.mycelium_stripped_oak_log": "Mycelium Stripped Oak Log",
+	"block.mocreating.mycelium_stripped_spruce_log": "Mycelium Stripped Spruce Log"
+	
 }

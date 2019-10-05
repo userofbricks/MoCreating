@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "sticks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "mocreating:prismarine_stick"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "use some prismarine sticks to craft a handle"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:trident_handle"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Handy Handle"
+        }
+    },
+    "requirements": [
+        [
+            "sticks"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/trident_handle"
+        ]
+    },
+    "parent": "mocreating:prismarine_stick"
+}

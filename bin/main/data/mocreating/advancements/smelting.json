@@ -1,0 +1,35 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "open_furnace": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:furnace"
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Open a furnace"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Smelt melt smelt melt burn"
+        }
+    },
+    "requirements": [
+        [
+            "open_furnace"
+        ]
+    ],
+    "rewards": {
+        "experience": 1
+    },
+    "parent": "mocreating:root"
+}

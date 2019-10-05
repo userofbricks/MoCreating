@@ -1,0 +1,55 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:wandering_trader_spawn_egg"
+                    }
+                ]
+            }
+        },
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_sword"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craftable Steve head"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:player_head"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "who's head?"
+        }
+    },
+    "requirements": [
+        [
+            "egg"
+        ],
+        [
+            "sword"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/player_skull"
+        ]
+    },
+    "parent": "mocreating:notch_apple"
+}

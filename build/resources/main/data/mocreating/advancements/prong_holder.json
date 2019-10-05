@@ -1,0 +1,43 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "sticks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 3,
+                            "min": 3
+                        },
+                        "item": "mocreating:prismarine_stick"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:trident_prong_holder"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Hold it. Hold it. Perfect!"
+        }
+    },
+    "requirements": [
+        [
+            "sticks"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/trident_prong_holder"
+        ]
+    },
+    "parent": "mocreating:prismarine_stick"
+}

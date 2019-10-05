@@ -1,0 +1,70 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:wool"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Dyed wool"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:white_wool"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Colored Wool"
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:universal_dyeing/white_wool",
+            "mocreating:universal_dyeing/orange_wool",
+            "mocreating:universal_dyeing/magenta_wool",
+            "mocreating:universal_dyeing/light_blue_wool",
+            "mocreating:universal_dyeing/yellow_wool",
+            "mocreating:universal_dyeing/lime_wool",
+            "mocreating:universal_dyeing/pink_wool",
+            "mocreating:universal_dyeing/gray_wool",
+            "mocreating:universal_dyeing/light_gray_wool",
+            "mocreating:universal_dyeing/cyan_wool",
+            "mocreating:universal_dyeing/purple_wool",
+            "mocreating:universal_dyeing/blue_wool",
+            "mocreating:universal_dyeing/brown_wool",
+            "mocreating:universal_dyeing/green_wool",
+            "mocreating:universal_dyeing/red_wool",
+            "mocreating:universal_dyeing/black_wool"
+        ]
+    },
+    "parent": "mocreating:universal_dyeing"
+}

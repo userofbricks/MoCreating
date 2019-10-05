@@ -1,0 +1,125 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "dirt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dirt"
+                    }
+                ]
+            }
+        },
+        "coarse_dirt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:coarse_dirt"
+                    }
+                ]
+            }
+        },
+        "path": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:grass_path"
+                    }
+                ]
+            }
+        },
+        "grass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:grass_block"
+                    }
+                ]
+            }
+        },
+        "podzol": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:podzol"
+                    }
+                ]
+            }
+        },
+        "mycelium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:mycelium"
+                    }
+                ]
+            }
+        },
+        "gravel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gravel"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "all the dirt"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:coarse_dirt"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Dirty dirt"
+        }
+    },
+    "requirements": [
+        [
+            "dirt"
+        ],
+        [
+            "coarse_dirt"
+        ],
+        [
+            "path"
+        ],
+        [
+            "grass"
+        ],
+        [
+            "podzol"
+        ],
+        [
+            "mycelium"
+        ],
+        [
+            "gravel"
+        ]
+    ],
+    "rewards": {
+        "experience": 2,
+        "recipes": [
+            "mocreating:organics/dirt/grass_path",
+            "mocreating:organics/dirt/grass",
+            "mocreating:organics/dirt/gravel",
+            "mocreating:organics/dirt/mycelium",
+            "mocreating:organics/dirt/mycelium2",
+            "mocreating:organics/dirt/podzol"
+        ]
+    },
+    "parent": "mocreating:organics"
+}

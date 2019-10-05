@@ -1,0 +1,41 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "loaded_game": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:crafting_table"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "loaded_game"
+        ]
+    ],
+    "rewards": {
+        "experience": 1
+    },
+    "display": {
+        "title": {
+            "bold": false,
+            "color": "gold",
+            "italic": true,
+            "obfuscated": false,
+            "strikethrough": false,
+            "text": "MoRecipies",
+            "underlined": false
+        },
+        "description": {
+            "text": "This is where it all begins"
+        },
+        "icon": {
+            "item": "minecraft:crafting_table"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "mocreating:textures/gui/advancements/backgrounds/morecipes.png"
+    }
+}

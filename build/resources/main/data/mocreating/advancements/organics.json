@@ -1,0 +1,29 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "tick"
+        ]
+    ],
+    "display": {
+        "title": {
+            "text": "Ground, Earth, Plants, Trees"
+        },
+        "description": {
+            "obfuscated": false
+        },
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false
+    },
+    "parent": "mocreating:root"
+}

@@ -1,0 +1,63 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "nether stars": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 5,
+                            "min": 5
+                        },
+                        "item": "minecraft:nether_star"
+                    }
+                ]
+            }
+        },
+        "iron_bars": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 4,
+                            "min": 4
+                        },
+                        "item": "minecraft:iron_bars"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Spawners are a way to increase the productivity of your mob farms"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:spawner"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "An Upgrade"
+        }
+    },
+    "requirements": [
+        [
+            "nether stars"
+        ],
+        [
+            "iron_bars"
+        ]
+    ],
+    "rewards": {
+        "experience": 5,
+        "recipes": [
+            "mocreating:spawner"
+        ]
+    },
+    "parent": "mocreating:spawn_eggs"
+}

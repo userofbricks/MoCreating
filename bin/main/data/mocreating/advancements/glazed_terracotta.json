@@ -1,0 +1,70 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:glazed_terracotta"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "glazed terracotta"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:yellow_glazed_terracotta"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Glossy"
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:universal_dyeing/white_glazed_terracotta",
+            "mocreating:universal_dyeing/orange_glazed_terracotta",
+            "mocreating:universal_dyeing/magenta_glazed_terracotta",
+            "mocreating:universal_dyeing/light_blue_glazed_terracotta",
+            "mocreating:universal_dyeing/yellow_glazed_terracotta",
+            "mocreating:universal_dyeing/lime_glazed_terracotta",
+            "mocreating:universal_dyeing/pink_glazed_terracotta",
+            "mocreating:universal_dyeing/gray_glazed_terracotta",
+            "mocreating:universal_dyeing/light_gray_glazed_terracotta",
+            "mocreating:universal_dyeing/cyan_glazed_terracotta",
+            "mocreating:universal_dyeing/purple_glazed_terracotta",
+            "mocreating:universal_dyeing/blue_glazed_terracotta",
+            "mocreating:universal_dyeing/brown_glazed_terracotta",
+            "mocreating:universal_dyeing/green_glazed_terracotta",
+            "mocreating:universal_dyeing/red_glazed_terracotta",
+            "mocreating:universal_dyeing/black_glazed_terracotta"
+        ]
+    },
+    "parent": "mocreating:universal_dyeing"
+}

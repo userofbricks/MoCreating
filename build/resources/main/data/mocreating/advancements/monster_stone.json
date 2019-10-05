@@ -1,0 +1,112 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "silverfish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:silverfish_spawn_egg"
+                    }
+                ]
+            }
+        },
+        "stone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone"
+                    }
+                ]
+            }
+        },
+        "cobble": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cobblestone"
+                    }
+                ]
+            }
+        },
+        "brick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stone_bricks"
+                    }
+                ]
+            }
+        },
+        "cracked_brick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cracked_stone_bricks"
+                    }
+                ]
+            }
+        },
+        "mossy_brick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:mossy_stone_bricks"
+                    }
+                ]
+            }
+        },
+        "chiseled": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:chiseled_stone_bricks"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:infested_stone"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Infested stones"
+        }
+    },
+    "requirements": [
+        [
+            "silverfish"
+        ],
+        [
+            "stone",
+            "cobble",
+            "brick",
+            "cracked_brick",
+            "mossy_brick",
+            "chiseled"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:stone/monster_egg",
+            "mocreating:stone/monster_egg2",
+            "mocreating:stone/monster_egg3",
+            "mocreating:stone/monster_egg4",
+            "mocreating:stone/monster_egg5",
+            "mocreating:stone/monster_egg6"
+        ]
+    },
+    "parent": "mocreating:organics"
+}

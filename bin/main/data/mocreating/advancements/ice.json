@@ -1,0 +1,43 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_packed_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:packed_ice"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Uncraftable packed ice"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:packed_ice"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "aqua",
+            "text": "N-ice"
+        }
+    },
+    "requirements": [
+        [
+            "has_packed_ice"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:ice/ice"
+        ]
+    },
+    "parent": "mocreating:water_lava"
+}

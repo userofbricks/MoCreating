@@ -1,0 +1,58 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "leather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 10,
+                            "min": 10
+                        },
+                        "item": "minecraft:leather"
+                    }
+                ]
+            }
+        },
+        "ride_horse": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse"
+                }
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft yourself a saddle"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:saddle"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Giddy up!"
+        }
+    },
+    "requirements": [
+        [
+            "leather"
+        ],
+        [
+            "ride_horse"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:armor/saddle",
+            "mocreating:armor/saddle2"
+        ]
+    },
+    "parent": "mocreating:chain"
+}

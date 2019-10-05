@@ -1,0 +1,36 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "jump": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "overworld",
+                "to": "the_end"
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "jump into the end"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:end_portal_frame"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "The end of what?"
+        }
+    },
+    "requirements": [
+        [
+            "jump"
+        ]
+    ],
+    "rewards": {
+        "experience": 10
+    },
+    "parent": "mocreating:nether"
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "mocreating:block/mycelium/bone_up" },
+        "axis=z":   { "model": "mocreating:block/mycelium/bone_side" },
+        "axis=x":   { "model": "mocreating:block/mycelium/bone_side", "y": 90 }
+    }
+}

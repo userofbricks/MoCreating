@@ -1,0 +1,42 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_dust": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "mocreating:nether_dust"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Found nether dust"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:nether_dust"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Whats this? a nether what?"
+        }
+    },
+    "requirements": [
+        [
+            "has_dust"
+        ]
+    ],
+    "rewards": {
+        "experience": 2,
+        "recipes": [
+            "mocreating:nether/nether_shard"
+        ]
+    },
+    "parent": "mocreating:nether"
+}

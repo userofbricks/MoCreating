@@ -1,0 +1,46 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "membrane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "minecraft:phantom_membrane"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "the start to crafting elytra ... scraps"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:skin_scraps"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "The long way"
+        }
+    },
+    "requirements": [
+        [
+            "membrane"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:end/skin_scraps"
+        ]
+    },
+    "parent": "mocreating:end"
+}

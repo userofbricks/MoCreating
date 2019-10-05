@@ -1,0 +1,23 @@
+{
+	"credit": "Made by Userofbricks",
+	"parent": "block/cube_bottom_top",
+	"textures": {
+		"bottom": "block/stripped_spruce_log_top",
+		"top": "block/mycelium_top",
+		"side": "mocreating:block/mycelium/stripped/spruce_log_side_up"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		}
+	]
+}

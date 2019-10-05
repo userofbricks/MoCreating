@@ -1,0 +1,72 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "handle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "mocreating:trident_handle"
+                    }
+                ]
+            }
+        },
+        "prong": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 3,
+                            "min": 3
+                        },
+                        "item": "mocreating:trident_prong"
+                    }
+                ]
+            }
+        },
+        "holder": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "mocreating:trident_prong_holder"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:trident"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "You Got it"
+        }
+    },
+    "requirements": [
+        [
+            "handle"
+        ],
+        [
+            "prong"
+        ],
+        [
+            "holder"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/trident"
+        ]
+    },
+    "parent": "mocreating:trident_handle"
+}

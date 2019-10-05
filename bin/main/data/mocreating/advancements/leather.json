@@ -1,0 +1,39 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "rotten_flesh": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:rotten_flesh"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Leather or flesh"
+        }
+    },
+    "requirements": [
+        [
+            "rotten_flesh"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:smelting/leather"
+        ]
+    },
+    "parent": "mocreating:smelting"
+}

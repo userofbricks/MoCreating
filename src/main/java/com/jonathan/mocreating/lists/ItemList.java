@@ -18,4 +18,38 @@ public class ItemList
 	public static Item prismarine_sharpened;
 	public static Item trident_prong_holder;
 	public static Item trident_prong;
+	
+	//blocks
+	public static Item mycelium_acacia_planks;
+	public static Item mycelium_acacia_log;
+	public static Item mycelium_birch_planks;
+	public static Item mycelium_birch_log;
+	public static Item mycelium_bone_block;
+	public static Item mycelium_coarse_dirt;
+	public static Item mycelium_dark_oak_planks;
+	public static Item mycelium_dark_oak_log;
+	public static Item mycelium_jungle_planks;
+	public static Item mycelium_jungle_log;
+	public static Item mycelium_nether_wart;
+	public static Item mycelium_nether_quartz;
+	public static Item mycelium_netherrack;
+	public static Item mycelium_oak_planks;
+	public static Item mycelium_oak_log;
+	public static Item mycelium_sponge;
+	public static Item mycelium_spruce_planks;
+	public static Item mycelium_spruce_log;
+	public static Item mycelium_wet_sponge;
+	
+	public static Item mycelium_stripped_acacia_planks;
+	public static Item mycelium_stripped_acacia_log;
+	public static Item mycelium_stripped_birch_planks;
+	public static Item mycelium_stripped_birch_log;
+	public static Item mycelium_stripped_dark_oak_planks;
+	public static Item mycelium_stripped_dark_oak_log;
+	public static Item mycelium_stripped_jungle_planks;
+	public static Item mycelium_stripped_jungle_log;
+	public static Item mycelium_stripped_oak_planks;
+	public static Item mycelium_stripped_oak_log;
+	public static Item mycelium_stripped_spruce_planks;
+	public static Item mycelium_stripped_spruce_log;
 }

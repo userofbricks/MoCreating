@@ -1,0 +1,40 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Any color to any color"
+        },
+        "frame": "goal",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:white_dye"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "dark_gray",
+            "text": "Universal Dyeing"
+        }
+    },
+    "requirements": [
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1
+    },
+    "parent": "mocreating:organics"
+}

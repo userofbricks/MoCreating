@@ -1,0 +1,57 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "minecraft:gold_ingot"
+                    }
+                ]
+            }
+        },
+        "saddle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:saddle"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:golden_horse_armor"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Show off"
+        }
+    },
+    "requirements": [
+        [
+            "gold"
+        ],
+        [
+            "saddle"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:armor/gold_horse_armor",
+            "mocreating:armor/golden_horse_armor2"
+        ]
+    },
+    "parent": "mocreating:iron_horse"
+}

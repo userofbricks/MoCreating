@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: MoCreating
-Implementation-Version: 1.14.4-0.3.0
+Implementation-Version: 1.14.4-0.3.3
 Specification-Vendor: com.jonathan.mocreating
 Specification-Title: mocreating
-Implementation-Timestamp: 2019-09-16T11:12:01-0700
+Implementation-Timestamp: 2019-10-04T18:12:51-0700
 Specification-Version: 1
 Implementation-Vendor: com.jonathan.mocreating
 

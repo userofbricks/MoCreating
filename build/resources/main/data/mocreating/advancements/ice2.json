@@ -1,0 +1,48 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_water_bucket": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:water_bucket"
+                    }
+                ]
+            }
+        },
+        "has_snow_balls": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craftable ice"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:ice"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "more ice"
+        }
+    },
+    "requirements": [
+        [
+            "has_water_bucket"
+        ],
+        [
+            "has_snow_balls"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:ice/ice2"
+        ]
+    },
+    "parent": "mocreating:ice"
+}

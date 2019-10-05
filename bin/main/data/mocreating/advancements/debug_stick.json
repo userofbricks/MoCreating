@@ -1,0 +1,56 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "stick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:stick"
+                    }
+                ]
+            }
+        },
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:debug_stick"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Shiny... what does it do?"
+        }
+    },
+    "requirements": [
+        [
+            "stick"
+        ],
+        [
+            "diamond"
+        ]
+    ],
+    "rewards": {
+        "experience": 10,
+        "recipes": [
+            "mocreating:organics/debug_stick"
+        ]
+    },
+    "parent": "mocreating:organics"
+}

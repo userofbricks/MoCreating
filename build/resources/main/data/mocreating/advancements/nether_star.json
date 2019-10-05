@@ -1,0 +1,55 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_shard": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "mocreating:nether_shard"
+                    }
+                ]
+            }
+        },
+        "has_diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:diamond"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Craftable nether stars"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:nether_star"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "nether stars!"
+        }
+    },
+    "requirements": [
+        [
+            "has_shard"
+        ],
+        [
+            "has_diamond"
+        ]
+    ],
+    "rewards": {
+        "experience": 2,
+        "recipes": [
+            "mocreating:nether/nether_star"
+        ]
+    },
+    "parent": "mocreating:nether_shard"
+}

@@ -1,0 +1,60 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "sticks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "mocreating:prismarine_stick"
+                    }
+                ]
+            }
+        },
+        "sharpened": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 2,
+                            "min": 2
+                        },
+                        "item": "mocreating:prismarine_sharpened"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:trident_prong"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Poke"
+        }
+    },
+    "requirements": [
+        [
+            "sticks"
+        ],
+        [
+            "sharpened"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:water/trident_prong"
+        ]
+    },
+    "parent": "mocreating:prong_holder"
+}

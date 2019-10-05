@@ -1,0 +1,63 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "skin_fold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 6,
+                            "min": 6
+                        },
+                        "item": "mocreating:skin_fold"
+                    }
+                ]
+            }
+        },
+        "bone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 3,
+                            "min": 3
+                        },
+                        "item": "mocreating:bone_hardend"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "craft 6 skin folds and 3 hardened bones"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "mocreating:wing_fold"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "hang in there"
+        }
+    },
+    "requirements": [
+        [
+            "skin_fold"
+        ],
+        [
+            "bone"
+        ]
+    ],
+    "rewards": {
+        "experience": 10,
+        "recipes": [
+            "mocreating:end/wing_fold"
+        ]
+    },
+    "parent": "mocreating:skin_fold"
+}

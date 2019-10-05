@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "mocreating:block/mycelium/jungle_log_up" },
+        "axis=z":   { "model": "mocreating:block/mycelium/jungle_log_side" },
+        "axis=x":   { "model": "mocreating:block/mycelium/jungle_log_side", "y": 90 }
+    }
+}

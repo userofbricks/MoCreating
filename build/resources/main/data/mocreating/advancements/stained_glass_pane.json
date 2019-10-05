@@ -1,0 +1,70 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:stained_glass_pane"
+                    }
+                ]
+            }
+        },
+        "has_dye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:dyes"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "stained glass panes"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "pane-full"
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ],
+        [
+            "has_dye"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:universal_dyeing/white_stained_glass_pane",
+            "mocreating:universal_dyeing/orange_stained_glass_pane",
+            "mocreating:universal_dyeing/magenta_stained_glass_pane",
+            "mocreating:universal_dyeing/light_blue_stained_glass_pane",
+            "mocreating:universal_dyeing/yellow_stained_glass_pane",
+            "mocreating:universal_dyeing/lime_stained_glass_pane",
+            "mocreating:universal_dyeing/pink_stained_glass_pane",
+            "mocreating:universal_dyeing/gray_stained_glass_pane",
+            "mocreating:universal_dyeing/light_gray_stained_glass_pane",
+            "mocreating:universal_dyeing/cyan_stained_glass_pane",
+            "mocreating:universal_dyeing/purple_stained_glass_pane",
+            "mocreating:universal_dyeing/blue_stained_glass_pane",
+            "mocreating:universal_dyeing/brown_stained_glass_pane",
+            "mocreating:universal_dyeing/green_stained_glass_pane",
+            "mocreating:universal_dyeing/red_stained_glass_pane",
+            "mocreating:universal_dyeing/black_stained_glass_pane"
+        ]
+    },
+    "parent": "mocreating:universal_dyeing"
+}

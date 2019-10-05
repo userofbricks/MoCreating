@@ -1,0 +1,45 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 4,
+                            "min": 4
+                        },
+                        "item": "minecraft:quartz"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:quartz_block"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Uncraftable quartz"
+        }
+    },
+    "requirements": [
+        [
+            "quartz"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:stone/chiseled_quartz_block_uncrafting",
+            "mocreating:stone/quartz_block_uncrafting",
+            "mocreating:stone/quartz_pillar_uncrafting"
+        ]
+    },
+    "parent": "mocreating:nether"
+}

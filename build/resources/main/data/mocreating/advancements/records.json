@@ -1,0 +1,50 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "disc": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "mocreating:records"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:music_disc_cat"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "Music anyone?"
+        }
+    },
+    "requirements": [
+        [
+            "disc"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:records/record_11",
+            "mocreating:records/record_13",
+            "mocreating:records/record_blocks",
+            "mocreating:records/record_cat",
+            "mocreating:records/record_chirp",
+            "mocreating:records/record_far",
+            "mocreating:records/record_mall",
+            "mocreating:records/record_mellohi",
+            "mocreating:records/record_stal",
+            "mocreating:records/record_strad",
+            "mocreating:records/record_wait",
+            "mocreating:records/record_ward"
+        ]
+    },
+    "parent": "mocreating:root"
+}

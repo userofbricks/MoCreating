@@ -1,0 +1,60 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "count": {
+                            "max": 8,
+                            "min": 8
+                        },
+                        "item": "minecraft:gold_block"
+                    }
+                ]
+            }
+        },
+        "apple": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:apple"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "text": "Its Back!"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "show_toast": true,
+        "title": {
+            "color": "gold",
+            "text": "Big shiny apple"
+        }
+    },
+    "requirements": [
+        [
+            "gold"
+        ],
+        [
+            "apple"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/notch_apple"
+        ]
+    },
+    "parent": "mocreating:chain"
+}

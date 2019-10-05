@@ -1,0 +1,51 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "egg": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:skeleton_spawn_egg"
+                    }
+                ]
+            }
+        },
+        "head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "show_toast": true,
+        "title": {
+            "text": "skin or burn?"
+        }
+    },
+    "requirements": [
+        [
+            "egg",
+            "head"
+        ]
+    ],
+    "rewards": {
+        "experience": 1,
+        "recipes": [
+            "mocreating:organics/skeleton_skull",
+            "mocreating:smelting/skeleton_skull"
+        ]
+    },
+    "parent": "mocreating:player_head"
+}
