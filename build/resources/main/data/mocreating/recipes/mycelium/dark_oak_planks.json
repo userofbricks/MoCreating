@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mycelium",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:dark_oak_planks"
+      
+    },
+    "#": {
+      "item": "mocreating:mycelium"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "mocreating:mycelium_dark_oak_planks",
+    "count": 6
+  }
+}

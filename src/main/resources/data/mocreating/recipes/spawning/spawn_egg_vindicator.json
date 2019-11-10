@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    "XXX",
+    "O#O",
+    "XXX"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:emerald"
+    },
+    "O": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:vindicator_spawn_egg"
+  }
+}

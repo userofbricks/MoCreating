@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    "XXX",
+    "O#O",
+    "XXX"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:bone"
+    },
+    "O": {
+      "item": "minecraft:bow"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:stray_spawn_egg"
+  }
+}

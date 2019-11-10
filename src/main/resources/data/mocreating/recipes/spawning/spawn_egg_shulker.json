@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    "X",
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:shulker_shell"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:shulker_spawn_egg"
+  }
+}

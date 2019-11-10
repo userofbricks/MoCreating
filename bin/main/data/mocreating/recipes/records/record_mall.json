@@ -20,5 +20,6 @@
   
   "result": {
     "item": "minecraft:music_disc_mall"
-  }
+  },
+  "group": "music_disc"
 }

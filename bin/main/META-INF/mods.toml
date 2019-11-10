@@ -10,7 +10,7 @@ authors="userofbricks"
 
 modId="mocreating" #mandatory
 
-version="0.3.4" #mandatory
+version="0.3.15" #mandatory
 
 displayName="MoCreating" #mandatory
 
@@ -36,7 +36,7 @@ This Mod adds some crafting recipes for items that where previously uncraftable.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
     
-[[dependencies.examplemod]]
+[[dependencies.mocreating]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.14.4]"

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "#X#",
+    "X#X",
+    "#X#"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "mocreating:spawn_frame_fragment"
+    },
+    "#": {
+      "item": "minecraft:nether_star"
+    }  
+  },
+  
+  
+  "result": {
+    "item": "minecraft:spawner"
+  }
+}

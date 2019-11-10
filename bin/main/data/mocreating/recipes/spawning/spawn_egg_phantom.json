@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:phantom_spawn_egg"
+  }
+}

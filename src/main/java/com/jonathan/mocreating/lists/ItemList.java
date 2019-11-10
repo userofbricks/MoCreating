@@ -19,6 +19,12 @@ public class ItemList
 	public static Item trident_prong_holder;
 	public static Item trident_prong;
 	
+	public static Item spawn_egg_base;
+	
+	public static Item mycelium;
+	
+	public static Item spawn_frame_fragment;
+	
 	//blocks
 	public static Item mycelium_acacia_planks;
 	public static Item mycelium_acacia_log;
@@ -40,16 +46,10 @@ public class ItemList
 	public static Item mycelium_spruce_log;
 	public static Item mycelium_wet_sponge;
 	
-	public static Item mycelium_stripped_acacia_planks;
 	public static Item mycelium_stripped_acacia_log;
-	public static Item mycelium_stripped_birch_planks;
 	public static Item mycelium_stripped_birch_log;
-	public static Item mycelium_stripped_dark_oak_planks;
 	public static Item mycelium_stripped_dark_oak_log;
-	public static Item mycelium_stripped_jungle_planks;
 	public static Item mycelium_stripped_jungle_log;
-	public static Item mycelium_stripped_oak_planks;
 	public static Item mycelium_stripped_oak_log;
-	public static Item mycelium_stripped_spruce_planks;
 	public static Item mycelium_stripped_spruce_log;
 }

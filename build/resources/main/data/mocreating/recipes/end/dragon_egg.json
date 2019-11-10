@@ -18,6 +18,7 @@
   
   
   "result": {
-    "item": "minecraft:dragon_egg"
+    "item": "minecraft:dragon_egg",
+    "count": 2
   }
 }

@@ -3,7 +3,6 @@ package com.jonathan.mocreating;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.jonathan.mocreating.config.Config;
 import com.jonathan.mocreating.lists.BlockList;
 import com.jonathan.mocreating.lists.ItemList;
 
@@ -20,13 +19,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLPaths;
 
 @Mod("mocreating")
 public class MoCreating
@@ -39,14 +35,8 @@ public class MoCreating
 	{
 		instance = this;
 		
-		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.SERVER_CONFIG);
-		ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
-		
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegisteries);
-		
-		Config.loadConfig(Config.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("mocreating-client.toml").toString());
-		Config.loadConfig(Config.SERVER_CONFIG, FMLPaths.CONFIGDIR.get().resolve("mocreating-server.toml").toString());
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -69,53 +59,56 @@ public class MoCreating
 		{
 			event.getRegistry().registerAll
 			(
-					ItemList.nether_dust = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("nether_dust")),
-					ItemList.nether_shard = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("nether_shard")),
-			
-					ItemList.skin_scraps = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("skin_scraps")),
-					ItemList.skin_fold = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("skin_fold")),
-					ItemList.wing_fold = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("wing_fold")),
-					ItemList.wing = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("wing")),
-					ItemList.bone_hardend = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("bone_hardend")),
-			
-					ItemList.trident_handle = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("trident_handle")),
-					ItemList.prismarine_stick = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("prismarine_stick")),
-					ItemList.prismarine_sharpened = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("prismarine_sharpened")),
-					ItemList.trident_prong_holder = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("trident_prong_holder")),
-					ItemList.trident_prong = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("trident_prong")),
-					
-					
-					
 					//blocks
-					ItemList.mycelium_acacia_planks = new BlockItem(BlockList.mycelium_acacia_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_acacia_planks.getRegistryName()),
-					ItemList.mycelium_acacia_log = new BlockItem(BlockList.mycelium_acacia_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_acacia_log.getRegistryName()),
-					ItemList.mycelium_birch_planks = new BlockItem(BlockList.mycelium_birch_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_birch_planks.getRegistryName()),
-					ItemList.mycelium_birch_log = new BlockItem(BlockList.mycelium_birch_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_birch_log.getRegistryName()),
-					ItemList.mycelium_bone_block = new BlockItem(BlockList.mycelium_bone_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_bone_block.getRegistryName()),
-					ItemList.mycelium_coarse_dirt = new BlockItem(BlockList.mycelium_coarse_dirt, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_coarse_dirt.getRegistryName()),
-					ItemList.mycelium_dark_oak_planks = new BlockItem(BlockList.mycelium_dark_oak_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_dark_oak_planks.getRegistryName()),
-					ItemList.mycelium_dark_oak_log = new BlockItem(BlockList.mycelium_dark_oak_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_dark_oak_log.getRegistryName()),
-					ItemList.mycelium_jungle_planks = new BlockItem(BlockList.mycelium_jungle_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_jungle_planks.getRegistryName()),
-					ItemList.mycelium_jungle_log = new BlockItem(BlockList.mycelium_jungle_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_jungle_log.getRegistryName()),
-					ItemList.mycelium_nether_wart = new BlockItem(BlockList.mycelium_nether_wart, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_nether_wart.getRegistryName()),
-					ItemList.mycelium_nether_quartz = new BlockItem(BlockList.mycelium_nether_quartz, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_nether_quartz.getRegistryName()),
-					ItemList.mycelium_netherrack = new BlockItem(BlockList.mycelium_netherrack, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_netherrack.getRegistryName()),
-					ItemList.mycelium_oak_planks = new BlockItem(BlockList.mycelium_oak_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_oak_planks.getRegistryName()),
-					ItemList.mycelium_oak_log = new BlockItem(BlockList.mycelium_oak_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_oak_log.getRegistryName()),
-					ItemList.mycelium_sponge = new BlockItem(BlockList.mycelium_sponge, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_sponge.getRegistryName()),
-					ItemList.mycelium_spruce_planks = new BlockItem(BlockList.mycelium_spruce_planks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_spruce_planks.getRegistryName()),
-					ItemList.mycelium_spruce_log = new BlockItem(BlockList.mycelium_spruce_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_spruce_log.getRegistryName()),
-					ItemList.mycelium_wet_sponge = new BlockItem(BlockList.mycelium_wet_sponge, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_wet_sponge.getRegistryName()),
+					ItemList.mycelium_acacia_planks 	= new BlockItem(BlockList.mycelium_acacia_planks, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_acacia_planks.getRegistryName()),
+					ItemList.mycelium_acacia_log 		= new BlockItem(BlockList.mycelium_acacia_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_acacia_log.getRegistryName()),
+					ItemList.mycelium_birch_planks 		= new BlockItem(BlockList.mycelium_birch_planks, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_birch_planks.getRegistryName()),
+					ItemList.mycelium_birch_log 		= new BlockItem(BlockList.mycelium_birch_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_birch_log.getRegistryName()),
+					ItemList.mycelium_bone_block 		= new BlockItem(BlockList.mycelium_bone_block, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_bone_block.getRegistryName()),
+					ItemList.mycelium_coarse_dirt 		= new BlockItem(BlockList.mycelium_coarse_dirt, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_coarse_dirt.getRegistryName()),
+					ItemList.mycelium_dark_oak_planks 	= new BlockItem(BlockList.mycelium_dark_oak_planks, new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_dark_oak_planks.getRegistryName()),
+					ItemList.mycelium_dark_oak_log 		= new BlockItem(BlockList.mycelium_dark_oak_log, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_dark_oak_log.getRegistryName()),
+					ItemList.mycelium_jungle_planks 	= new BlockItem(BlockList.mycelium_jungle_planks, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_jungle_planks.getRegistryName()),
+					ItemList.mycelium_jungle_log 		= new BlockItem(BlockList.mycelium_jungle_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_jungle_log.getRegistryName()),
+					ItemList.mycelium_nether_wart 		= new BlockItem(BlockList.mycelium_nether_wart, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_nether_wart.getRegistryName()),
+					ItemList.mycelium_nether_quartz 	= new BlockItem(BlockList.mycelium_nether_quartz, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_nether_quartz.getRegistryName()),
+					ItemList.mycelium_netherrack 		= new BlockItem(BlockList.mycelium_netherrack, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_netherrack.getRegistryName()),
+					ItemList.mycelium_oak_planks 		= new BlockItem(BlockList.mycelium_oak_planks, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_oak_planks.getRegistryName()),
+					ItemList.mycelium_oak_log 			= new BlockItem(BlockList.mycelium_oak_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_oak_log.getRegistryName()),
+					ItemList.mycelium_sponge 			= new BlockItem(BlockList.mycelium_sponge, 			new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_sponge.getRegistryName()),
+					ItemList.mycelium_spruce_planks 	= new BlockItem(BlockList.mycelium_spruce_planks, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_spruce_planks.getRegistryName()),
+					ItemList.mycelium_spruce_log 		= new BlockItem(BlockList.mycelium_spruce_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_spruce_log.getRegistryName()),
+					ItemList.mycelium_wet_sponge 		= new BlockItem(BlockList.mycelium_wet_sponge, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_wet_sponge.getRegistryName()),
+						
+					ItemList.mycelium_stripped_oak_log 		= new BlockItem(BlockList.mycelium_stripped_oak_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_oak_log.getRegistryName()),
+					ItemList.mycelium_stripped_spruce_log 	= new BlockItem(BlockList.mycelium_stripped_spruce_log, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_spruce_log.getRegistryName()),
+					ItemList.mycelium_stripped_dark_oak_log = new BlockItem(BlockList.mycelium_stripped_dark_oak_log, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_dark_oak_log.getRegistryName()),
+					ItemList.mycelium_stripped_jungle_log 	= new BlockItem(BlockList.mycelium_stripped_jungle_log, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_jungle_log.getRegistryName()),
+					ItemList.mycelium_stripped_acacia_log 	= new BlockItem(BlockList.mycelium_stripped_acacia_log, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_acacia_log.getRegistryName()),
+					ItemList.mycelium_stripped_birch_log 	= new BlockItem(BlockList.mycelium_stripped_birch_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_birch_log.getRegistryName()),
 					
-					ItemList.mycelium_stripped_oak_log = new BlockItem(BlockList.mycelium_stripped_oak_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_oak_log.getRegistryName()),
-					ItemList.mycelium_stripped_spruce_log = new BlockItem(BlockList.mycelium_stripped_spruce_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_spruce_log.getRegistryName()),
-					ItemList.mycelium_stripped_dark_oak_log = new BlockItem(BlockList.mycelium_stripped_dark_oak_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_dark_oak_log.getRegistryName()),
-					ItemList.mycelium_stripped_jungle_log = new BlockItem(BlockList.mycelium_stripped_jungle_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_jungle_log.getRegistryName()),
-					ItemList.mycelium_stripped_acacia_log = new BlockItem(BlockList.mycelium_stripped_acacia_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_acacia_log.getRegistryName()),
-					ItemList.mycelium_stripped_birch_log = new BlockItem(BlockList.mycelium_stripped_birch_log, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.mycelium_stripped_birch_log.getRegistryName())
+					//items
+					ItemList.nether_dust 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("nether_dust")),
+					ItemList.nether_shard 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("nether_shard")),
 					
+					ItemList.skin_scraps 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("skin_scraps")),
+					ItemList.skin_fold 		= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("skin_fold")),
+					ItemList.wing_fold 		= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("wing_fold")),
+					ItemList.wing 			= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("wing")),
+					ItemList.bone_hardend 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("bone_hardend")),
+					
+					ItemList.spawn_egg_base = new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("spawn_egg_base")),
+					
+					ItemList.trident_handle 		= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("trident_handle")),
+					ItemList.prismarine_stick 		= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("prismarine_stick")),
+					ItemList.prismarine_sharpened 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("prismarine_sharpened")),
+					ItemList.trident_prong_holder 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("trident_prong_holder")),
+					ItemList.trident_prong 			= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("trident_prong")),
+					
+					ItemList.mycelium 				= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("mycelium")),
+					
+					ItemList.spawn_frame_fragment 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("spawn_frame_fragment"))
 			);
-			
 			LOGGER.info("items registered.");
 		}
 		
@@ -124,32 +117,32 @@ public class MoCreating
 		{
 			event.getRegistry().registerAll
 			(
-				BlockList.mycelium_acacia_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_acacia_planks")),
-				BlockList.mycelium_acacia_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_acacia_log")),
-				BlockList.mycelium_birch_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_birch_planks")),
-				BlockList.mycelium_birch_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_birch_log")),
-				BlockList.mycelium_bone_block = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_bone_block")),
-				BlockList.mycelium_coarse_dirt = new Block(Block.Properties.create(Material.EARTH).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.WET_GRASS).harvestTool(ToolType.SHOVEL)).setRegistryName(location("mycelium_coarse_dirt")),
-				BlockList.mycelium_dark_oak_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_dark_oak_planks")),
-				BlockList.mycelium_dark_oak_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_dark_oak_log")),
-				BlockList.mycelium_jungle_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_jungle_planks")),
-				BlockList.mycelium_jungle_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_jungle_log")),
-				BlockList.mycelium_nether_wart = new Block(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.SHOVEL)).setRegistryName(location("mycelium_nether_wart")),
-				BlockList.mycelium_nether_quartz = new Block(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE)).setRegistryName(location("mycelium_nether_quartz")),
-				BlockList.mycelium_netherrack = new Block(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.SHOVEL)).setRegistryName(location("mycelium_netherrack")),
-				BlockList.mycelium_oak_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_oak_planks")),
-				BlockList.mycelium_oak_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_oak_log")),
-				BlockList.mycelium_sponge = new Block(Block.Properties.create(Material.SPONGE).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART)).setRegistryName(location("mycelium_sponge")),
-				BlockList.mycelium_spruce_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_spruce_planks")),
-				BlockList.mycelium_spruce_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_spruce_log")),
-				BlockList.mycelium_wet_sponge = new Block(Block.Properties.create(Material.SPONGE).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART)).setRegistryName(location("mycelium_wet_sponge")),
+				BlockList.mycelium_acacia_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_planks")),
+				BlockList.mycelium_acacia_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_log")),
+				BlockList.mycelium_birch_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_planks")),
+				BlockList.mycelium_birch_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_log")),
+				BlockList.mycelium_bone_block 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_bone_block")),
+				BlockList.mycelium_coarse_dirt 		= new Block(							Block.Properties.create(Material.EARTH)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_coarse_dirt")),
+				BlockList.mycelium_dark_oak_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_planks")),
+				BlockList.mycelium_dark_oak_log 	= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_log")),
+				BlockList.mycelium_jungle_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_planks")),
+				BlockList.mycelium_jungle_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_log")),
+				BlockList.mycelium_nether_wart 		= new Block(							Block.Properties.create(Material.ORGANIC)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_nether_wart")),
+				BlockList.mycelium_nether_quartz 	= new Block(							Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.PICKAXE))	.setRegistryName(location("mycelium_nether_quartz")),
+				BlockList.mycelium_netherrack 		= new Block(							Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_netherrack")),
+				BlockList.mycelium_oak_planks 		= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_planks")),
+				BlockList.mycelium_oak_log 			= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_log")),
+				BlockList.mycelium_sponge 			= new Block(							Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_sponge")),
+				BlockList.mycelium_spruce_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_planks")),
+				BlockList.mycelium_spruce_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_log")),
+				BlockList.mycelium_wet_sponge 		= new Block(							Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_wet_sponge")),
 				
-				BlockList.mycelium_stripped_oak_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_oak_log")),
-				BlockList.mycelium_stripped_spruce_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_spruce_log")),
-				BlockList.mycelium_stripped_dark_oak_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_dark_oak_log")),
-				BlockList.mycelium_stripped_jungle_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_jungle_log")),
-				BlockList.mycelium_stripped_acacia_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_acacia_log")),
-				BlockList.mycelium_stripped_birch_log = new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 15.0f).sound(SoundType.NETHER_WART).harvestTool(ToolType.AXE)).setRegistryName(location("mycelium_stripped_birch_log"))
+				BlockList.mycelium_stripped_oak_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_oak_log")),
+				BlockList.mycelium_stripped_spruce_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_spruce_log")),
+				BlockList.mycelium_stripped_dark_oak_log 	= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_dark_oak_log")),
+				BlockList.mycelium_stripped_jungle_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_jungle_log")),
+				BlockList.mycelium_stripped_acacia_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_acacia_log")),
+				BlockList.mycelium_stripped_birch_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_birch_log"))
 			);
 			
 			LOGGER.info("Blocks registered.");

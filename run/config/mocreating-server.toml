@@ -1,0 +1,77 @@
+
+[mycelium]
+	#disable/enable the Mycelium Variant recipies.
+	more_mycelium = true
+
+[crafting]
+	#disable/enable the recipe for sponge.
+	sponge = true
+	#disable/enable the recipes for horse armor. this does not include leather horse armor as that is a vanilla recipe.
+	horse_armor = true
+	#disable/enable the recipes for saddles.
+	saddle = true
+	#disable/enable the recipes for records.
+	records = true
+	#disable/enable the recipe for ice.
+	ice = true
+	#disable/enable the recipe for the dragon head.
+	dragon = true
+	#disable/enable the recipe for craftable nether stars.
+	nether_star = true
+	#disable/enable the recipes for mushroom blocks.
+	mushroom_blocks = true
+	#disable/enable the recipes for the dispenser.
+	dispenser = true
+	#disable/enable the recipe for the end frame.
+	end_frame = true
+	#disable/enable the recipes for coral blocks.
+	coral = true
+	#disable/enable the recipe for the totem of undieing.
+	totem = true
+	#disable/enable the recipe for the dragon egg.
+	dragon_egg = true
+	#disable/enable the recipe for name tags.
+	name_tag = true
+	#disable/enable the recipes for spawn eggs and spawners.
+	spawning = true
+	#disable/enable the recipe for the knowledge book.
+	knowledge_book = true
+	#disable/enable the recipes for the player, skeleton, and wither skulls.
+	skulls = true
+	#disable/enable the recipes for craftable chain mail.
+	chain_mail = true
+	#disable/enable the recipe for the debug stick.
+	debug = true
+	#disable/enable the recipe for craftable tridents as well as items from this mod used to craft them.
+	trident = true
+	#disable/enable the smelting recipe for the wither skull.
+	wither_skull = true
+	#disable/enable the recipes for the monster blocks.
+	monster_blocks = true
+	#disable/enable the recipes for webs and string.
+	string_web = true
+	#disable/enable the recipes for craftable vanilla mycelium, grass, podzol, gravel, and path blocks.
+	dirt = true
+	#disable/enable the recipes for dragons breath.
+	dragons_breath = true
+	#disable/enable the recipes that use lava and water to create stone, cobblestone, and obsidian.
+	water_lava = true
+	#disable/enable the smelting recipe for leather.
+	leather = true
+	#disable/enable the recipe for notch apples.
+	notch_apple = true
+	#disable/enable the recipe for spawners.
+	spawner = true
+	#disable/enable the recipes for universal dyeing of things.
+	universal_dyeing = true
+	#disable/enable the recipe for craftable elytra as well as items from this mod used to craft them.
+	elytra = true
+	#disable/enable the recipes for all the spawn eggs.
+	spawn_eggs = true
+	#disable/enable the recipes that enable you to uncraft certain things.
+	uncrafting = true
+	#disable/enable the recipe for the xp bottle.
+	xp_bottle = true
+	#disable/enable the smelting recipes for the dead bush.
+	dead_bush = true
+

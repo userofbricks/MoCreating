@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mycelium",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:netherrack"
+      
+    },
+    "#": {
+      "item": "mocreating:mycelium"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "mocreating:mycelium_netherrack",
+    "count": 6
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chain_armor",
+  "pattern": [
+    "X#X",
+    "# #",
+    "# #"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "tag": "forge:ingots/iron"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:chainmail_leggings"
+  }
+}

@@ -17,5 +17,6 @@
   
   "result": {
     "item": "minecraft:music_disc_11"
-  }
+  },
+  "group": "music_disc"
 }

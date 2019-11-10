@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    "OXO",
+    "O#O",
+    "OXO"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:emerald"
+    },
+    "O": {
+      "item": "minecraft:crossbow"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:pillager_spawn_egg"
+  }
+}

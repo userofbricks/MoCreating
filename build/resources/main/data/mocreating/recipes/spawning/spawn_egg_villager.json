@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:emerald"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:villager_spawn_egg"
+  }
+}

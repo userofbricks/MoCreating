@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mycelium",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:nether_wart_block"
+      
+    },
+    "#": {
+      "item": "mocreating:mycelium"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "mocreating:mycelium_nether_wart",
+    "count": 6
+  }
+}

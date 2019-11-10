@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mycelium",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:spruce_log"
+      
+    },
+    "#": {
+      "item": "mocreating:mycelium"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "mocreating:mycelium_spruce_log",
+    "count": 6
+  }
+}

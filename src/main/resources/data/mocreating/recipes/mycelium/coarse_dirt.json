@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mycelium",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:coarse_dirt"
+      
+    },
+    "#": {
+      "item": "mocreating:mycelium"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "mocreating:mycelium_coarse_dirt",
+    "count": 6
+  }
+}

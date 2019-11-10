@@ -1,7 +1,7 @@
-Args: "--in-jar", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/libs/MoCreating-1.14.4-0.3.4.jar", "--out-jar", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/reobfJar/output.jar", "--srg-in", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/createMcpToSrg/output.tsrg", "--live"
+Args: "--in-jar", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/libs/MoCreating-1.14.4-0.3.14.jar", "--out-jar", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/reobfJar/output.jar", "--srg-in", "/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/build/createMcpToSrg/output.tsrg", "--live"
 Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/maven_downloader/net/md-5/SpecialSource/1.8.3/SpecialSource-1.8.3-shaded.jar
-Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.0.104_mapped_snapshot_20190910-1.14.3/forge-1.14.4-28.0.104_mapped_snapshot_20190910-1.14.3-recomp.jar
-Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.0.104_mapped_snapshot_20190910-1.14.3/forge-1.14.4-28.0.104_mapped_snapshot_20190910-1.14.3-launcher.jar
+Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.0_mapped_snapshot_20191004-1.14.3/forge-1.14.4-28.1.0_mapped_snapshot_20191004-1.14.3-recomp.jar
+Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.0_mapped_snapshot_20191004-1.14.3/forge-1.14.4-28.1.0_mapped_snapshot_20191004-1.14.3-launcher.jar
 Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/minecraft_repo/versions/1.14.4/client-extra.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/1.0.0/9bf27eaa6eb146a38702589ce01eae7815e637e8/accesstransformers-1.0.0-shadowed.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/1.0.0/dfdaccd05f2d127a3633e45eb9119c9d1669e3ad/eventbus-1.0.0-service.jar
@@ -11,7 +11,7 @@ Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/cpw.mods/mod
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/3.2.0/f5e26713e11c0c23916de5512f69bd26d9e87499/modlauncher-3.2.0-api.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.0.9/d1e1ba354a40b5703340b5cb02fdca489cff3646/mergetool-1.0.9-api.jar
-Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/maven_downloader/de/oceanlabs/mcp/mcp_snapshot/20190910-1.14.3/mcp_snapshot-20190910-1.14.3.zip
+Classpath: /Users/jonathandillon/.gradle/caches/forge_gradle/maven_downloader/de/oceanlabs/mcp/mcp_snapshot/20191004-1.14.3/mcp_snapshot-20191004-1.14.3.zip
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/6.2/f0df1c69e34a0463679d7c8db36ddb4312836e76/asm-commons-6.2.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/6.2/a9690730f92cc79eeadc20e400ebb41eccce10b1/asm-util-6.2.jar
 Classpath: /Users/jonathandillon/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.2/c7d9a90d221cbb977848d2c777eb3aa7637e89df/asm-analysis-6.2.jar

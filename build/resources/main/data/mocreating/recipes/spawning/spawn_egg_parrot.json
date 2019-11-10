@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    "OXO",
+    "X#X",
+    "OXO"
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:feather"
+    },
+    "O": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:parrot_spawn_egg"
+  }
+}

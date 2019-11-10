@@ -15,6 +15,10 @@
 	"item.mocreating.trident_prong_holder": "Trident Prong Holder",
 	"item.mocreating.trident_prong": "Trident Prong",
 	
+	"item.mocreating.spawn_egg_base": "Spawn Egg Base",
+	"item.mocreating.mycelium": "Mycelium",
+	"item.mocreating.spawn_frame_fragment": "Spawn Frame Fragment",
+	
 	//blocks
 	"block.mocreating.mycelium_acacia_planks": "Mycelium Acacia Planks",
 	"block.mocreating.mycelium_acacia_log": "Mycelium Acacia Log",

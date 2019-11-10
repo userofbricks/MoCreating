@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spawn_eggs",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+  ],
+  
+  "key": {
+    "X": {
+      "item": "minecraft:ender_pearl"
+    },
+    "#": {
+      "item": "mocreating:spawn_egg_base"
+    }    
+  },
+  
+  
+  "result": {
+    "item": "minecraft:endermite_spawn_egg"
+  }
+}
