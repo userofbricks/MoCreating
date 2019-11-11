@@ -27,7 +27,7 @@ public class SpreadableNetherBlock extends SnowyDirtBlock
 			return true;
 		} else {
 			int i = LightEngine.func_215613_a(world, state, pos, blockstate, blockpos, Direction.UP, blockstate.getOpacity(world, blockpos));
-			return i < world.getMaxLightLevel();
+			return i > world.getMaxLightLevel();
 		}
 	}
 
