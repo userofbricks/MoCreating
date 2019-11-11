@@ -18,12 +18,5 @@
   
   "result": {
     "item": "minecraft:chainmail_boots"
-  },
-
-  "conditions": [
-    {
-      "type": "forge:item_exists",
-		"item": "mocreating:module_chain_mail"
-    }
-  ]
+  }
 }

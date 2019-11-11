@@ -3,11 +3,12 @@ package com.jonathan.mocreating;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.jonathan.mocreating.block.Mycelium;
+import com.jonathan.mocreating.block.MyceliumLog;
 import com.jonathan.mocreating.lists.BlockList;
 import com.jonathan.mocreating.lists.ItemList;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.LogBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -117,32 +118,32 @@ public class MoCreating
 		{
 			event.getRegistry().registerAll
 			(
-				BlockList.mycelium_acacia_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_planks")),
-				BlockList.mycelium_acacia_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_log")),
-				BlockList.mycelium_birch_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_planks")),
-				BlockList.mycelium_birch_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_log")),
-				BlockList.mycelium_bone_block 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_bone_block")),
-				BlockList.mycelium_coarse_dirt 		= new Block(							Block.Properties.create(Material.EARTH)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_coarse_dirt")),
-				BlockList.mycelium_dark_oak_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_planks")),
-				BlockList.mycelium_dark_oak_log 	= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_log")),
-				BlockList.mycelium_jungle_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_planks")),
-				BlockList.mycelium_jungle_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_log")),
-				BlockList.mycelium_nether_wart 		= new Block(							Block.Properties.create(Material.ORGANIC)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_nether_wart")),
-				BlockList.mycelium_nether_quartz 	= new Block(							Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.PICKAXE))	.setRegistryName(location("mycelium_nether_quartz")),
-				BlockList.mycelium_netherrack 		= new Block(							Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_netherrack")),
-				BlockList.mycelium_oak_planks 		= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_planks")),
-				BlockList.mycelium_oak_log 			= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_log")),
-				BlockList.mycelium_sponge 			= new Block(							Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_sponge")),
-				BlockList.mycelium_spruce_planks 	= new Block(							Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_planks")),
-				BlockList.mycelium_spruce_log 		= new LogBlock(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_log")),
-				BlockList.mycelium_wet_sponge 		= new Block(							Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_wet_sponge")),
+				BlockList.mycelium_acacia_planks 	= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_planks")),
+				BlockList.mycelium_acacia_log 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_acacia_log")),
+				BlockList.mycelium_birch_planks 	= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_planks")),
+				BlockList.mycelium_birch_log 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_birch_log")),
+				BlockList.mycelium_bone_block 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_bone_block")),
+				BlockList.mycelium_coarse_dirt 		= new Mycelium(								Block.Properties.create(Material.EARTH)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_coarse_dirt")),
+				BlockList.mycelium_dark_oak_planks 	= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_planks")),
+				BlockList.mycelium_dark_oak_log 	= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_dark_oak_log")),
+				BlockList.mycelium_jungle_planks 	= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_planks")),
+				BlockList.mycelium_jungle_log 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_log")),
+				BlockList.mycelium_nether_wart 		= new Mycelium(								Block.Properties.create(Material.ORGANIC)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_nether_wart")),
+				BlockList.mycelium_nether_quartz 	= new Mycelium(								Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.PICKAXE))	.setRegistryName(location("mycelium_nether_quartz")),
+				BlockList.mycelium_netherrack 		= new Mycelium(								Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_netherrack")),
+				BlockList.mycelium_oak_planks 		= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_planks")),
+				BlockList.mycelium_oak_log 			= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_log")),
+				BlockList.mycelium_sponge 			= new Mycelium(								Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_sponge")),
+				BlockList.mycelium_spruce_planks 	= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_planks")),
+				BlockList.mycelium_spruce_log 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_spruce_log")),
+				BlockList.mycelium_wet_sponge 		= new Mycelium(								Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_wet_sponge")),
 				
-				BlockList.mycelium_stripped_oak_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_oak_log")),
-				BlockList.mycelium_stripped_spruce_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_spruce_log")),
-				BlockList.mycelium_stripped_dark_oak_log 	= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_dark_oak_log")),
-				BlockList.mycelium_stripped_jungle_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_jungle_log")),
-				BlockList.mycelium_stripped_acacia_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_acacia_log")),
-				BlockList.mycelium_stripped_birch_log 		= new LogBlock(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_birch_log"))
+				BlockList.mycelium_stripped_oak_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_oak_log")),
+				BlockList.mycelium_stripped_spruce_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_spruce_log")),
+				BlockList.mycelium_stripped_dark_oak_log 	= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_dark_oak_log")),
+				BlockList.mycelium_stripped_jungle_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_jungle_log")),
+				BlockList.mycelium_stripped_acacia_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_acacia_log")),
+				BlockList.mycelium_stripped_birch_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_birch_log"))
 			);
 			
 			LOGGER.info("Blocks registered.");
