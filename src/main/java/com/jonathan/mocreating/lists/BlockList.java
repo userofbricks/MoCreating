@@ -30,4 +30,6 @@ public class BlockList
 	public static Block mycelium_stripped_jungle_log;
 	public static Block mycelium_stripped_oak_log;
 	public static Block mycelium_stripped_spruce_log;
+	
+	public static Block mycelium_withered_soulsand;
 }

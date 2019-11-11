@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class NetherMycelium extends SpreadableNetherBlock
+public class NetherMycelium extends SpreadableNetherMyceliumBlock
 {
 
 	public NetherMycelium(Properties properties) {
