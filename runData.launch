@@ -7,9 +7,9 @@
   <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/run"/>
   <mapAttribute key="org.eclipse.debug.core.environmentVariables">
     <mapEntry key="MOD_CLASSES" value="examplemod%%/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/bin/main:examplemod%%/Users/jonathandillon/Desktop/code/minecraft/1_14_4/mods/MoCreating/bin/main"/>
-    <mapEntry key="MCP_MAPPINGS" value="snapshot_20191004-1.14.3"/>
+    <mapEntry key="MCP_MAPPINGS" value="snapshot_20191110-1.14.3"/>
     <mapEntry key="MCP_VERSION" value="20190829.143755"/>
-    <mapEntry key="FORGE_VERSION" value="28.1.0"/>
+    <mapEntry key="FORGE_VERSION" value="28.1.87"/>
     <mapEntry key="FORGE_GROUP" value="net.minecraftforge"/>
     <mapEntry key="target" value="fmluserdevdata"/>
     <mapEntry key="MC_VERSION" value="1.14.4"/>

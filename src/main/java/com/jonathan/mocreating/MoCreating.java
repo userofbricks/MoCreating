@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.jonathan.mocreating.block.Mycelium;
 import com.jonathan.mocreating.block.MyceliumLog;
+import com.jonathan.mocreating.block.NetherMycelium;
 import com.jonathan.mocreating.lists.BlockList;
 import com.jonathan.mocreating.lists.ItemList;
 
@@ -130,7 +131,7 @@ public class MoCreating
 				BlockList.mycelium_jungle_log 		= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_jungle_log")),
 				BlockList.mycelium_nether_wart 		= new Mycelium(								Block.Properties.create(Material.ORGANIC)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_nether_wart")),
 				BlockList.mycelium_nether_quartz 	= new Mycelium(								Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.PICKAXE))	.setRegistryName(location("mycelium_nether_quartz")),
-				BlockList.mycelium_netherrack 		= new Mycelium(								Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_netherrack")),
+				BlockList.mycelium_netherrack 		= new NetherMycelium(						Block.Properties.create(Material.ROCK)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.STONE)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_netherrack")),
 				BlockList.mycelium_oak_planks 		= new Mycelium(								Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_planks")),
 				BlockList.mycelium_oak_log 			= new MyceliumLog(MaterialColor.PURPLE, 	Block.Properties.create(Material.WOOD)		.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WOOD)			.harvestTool(ToolType.AXE))		.setRegistryName(location("mycelium_oak_log")),
 				BlockList.mycelium_sponge 			= new Mycelium(								Block.Properties.create(Material.SPONGE)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART))									.setRegistryName(location("mycelium_sponge")),
