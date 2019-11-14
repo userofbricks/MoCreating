@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.jonathan.mocreating.block.Mycelium;
 import com.jonathan.mocreating.block.MyceliumLog;
 import com.jonathan.mocreating.block.NetherMycelium;
+import com.jonathan.mocreating.block.WitheredMycelium;
 import com.jonathan.mocreating.lists.BlockList;
 import com.jonathan.mocreating.lists.ItemList;
 
@@ -148,7 +149,7 @@ public class MoCreating
 				BlockList.mycelium_stripped_acacia_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_acacia_log")),
 				BlockList.mycelium_stripped_birch_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_birch_log")),
 				
-				BlockList.mycelium_withered_soulsand 		= new Mycelium(Block.Properties.create(Material.SAND)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.SAND)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_withered_soulsand"))
+				BlockList.mycelium_withered_soulsand 		= new WitheredMycelium(Block.Properties.create(Material.SAND)	.tickRandomly()	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.SAND)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_withered_soulsand"))
 			);
 			
 			LOGGER.info("Blocks registered.");
