@@ -47,6 +47,8 @@
 	"block.mocreating.mycelium_stripped_oak_log": "Mycelium Stripped Oak Log",
 	"block.mocreating.mycelium_stripped_spruce_log": "Mycelium Stripped Spruce Log",
 	
-	"block.mocreating.mycelium_withered_soulsand": "Withered Mycelium"
+	"block.mocreating.mycelium_withered_soulsand": "Withered Mycelium",
+	
+	"block.mocreating.mycelium_dirt": "Mycelium"
 	
 }

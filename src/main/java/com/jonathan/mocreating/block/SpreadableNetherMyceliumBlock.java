@@ -1,11 +1,13 @@
 package com.jonathan.mocreating.block;
 
+
 import java.util.Random;
 
 import com.jonathan.mocreating.lists.BlockList;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.RotatedPillarBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.SnowyDirtBlock;
 import net.minecraft.tags.FluidTags;
@@ -80,15 +82,17 @@ public class SpreadableNetherMyceliumBlock extends SnowyDirtBlock
 
 	            	for(int i = 0; i < 4; ++i) {
 	            		BlockPos blockpos = pos.add(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
+	            		BlockState blockstate = worldIn.getBlockState(blockpos);
+	            		
 	            		if (worldIn.getBlockState(blockpos).getBlock() == Blocks.NETHERRACK && func_220256_c(netherrack, worldIn, blockpos)) 
 	            		{
-	            			worldIn.setBlockState(blockpos, netherrack.with(SNOWY, Boolean.valueOf(worldIn.getBlockState(blockpos.up()).getBlock() == Blocks.SNOW)));
+	            			worldIn.setBlockState(blockpos, netherrack);
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.NETHER_QUARTZ_ORE && func_220256_c(nether_quartz, worldIn, blockpos)) 
 	            		{
-	            			worldIn.setBlockState(blockpos, nether_quartz.with(SNOWY, Boolean.valueOf(worldIn.getBlockState(blockpos.up()).getBlock() == Blocks.SNOW)));
+	            			worldIn.setBlockState(blockpos, nether_quartz);
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.NETHER_WART_BLOCK && func_220256_c(nether_wart, worldIn, blockpos)) 
 	            		{
-	            			worldIn.setBlockState(blockpos, nether_wart.with(SNOWY, Boolean.valueOf(worldIn.getBlockState(blockpos.up()).getBlock() == Blocks.SNOW)));
+	            			worldIn.setBlockState(blockpos, nether_wart);
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.SOUL_SAND && func_220256_c(soulsand, worldIn, blockpos)) 
 	            		{
 	            			worldIn.setBlockState(blockpos, soulsand);
@@ -116,42 +120,42 @@ public class SpreadableNetherMyceliumBlock extends SnowyDirtBlock
 	            		
 	            		else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.ACACIA_LOG && func_220256_c(acacia_log_base, worldIn, blockpos)) 
 	            		{
-	            			worldIn.setBlockState(blockpos, acacia_log_base);
+	            			worldIn.setBlockState(blockpos, acacia_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.BIRCH_LOG && func_220256_c(birch_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, birch_log_base);
+		            			worldIn.setBlockState(blockpos, birch_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.DARK_OAK_LOG && func_220256_c(dark_oak_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, dark_oak_log_base);
+		            			worldIn.setBlockState(blockpos, dark_oak_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.JUNGLE_LOG && func_220256_c(jungle_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, jungle_log_base);
+		            			worldIn.setBlockState(blockpos, jungle_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.OAK_LOG && func_220256_c(oak_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, oak_log_base);
+		            			worldIn.setBlockState(blockpos, oak_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.SPRUCE_LOG && func_220256_c(spruce_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, spruce_log_base);
+		            			worldIn.setBlockState(blockpos, spruce_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}
 	            		
 	            		else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_ACACIA_LOG && func_220256_c(stripped_acacia_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_acacia_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_acacia_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_BIRCH_LOG && func_220256_c(stripped_birch_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_birch_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_birch_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_DARK_OAK_LOG && func_220256_c(stripped_dark_oak_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_dark_oak_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_dark_oak_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_JUNGLE_LOG && func_220256_c(stripped_jungle_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_jungle_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_jungle_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_OAK_LOG && func_220256_c(stripped_oak_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_oak_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_oak_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STRIPPED_SPRUCE_LOG && func_220256_c(stripped_spruce_log_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, stripped_spruce_log_base);
+		            			worldIn.setBlockState(blockpos, stripped_spruce_log_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}
 	            		
 	            		else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.SPONGE && func_220256_c(sponge, worldIn, blockpos)) 
@@ -170,7 +174,7 @@ public class SpreadableNetherMyceliumBlock extends SnowyDirtBlock
 	            		
 	            		else if (worldIn.getBlockState(blockpos).getBlock() == Blocks.BONE_BLOCK && func_220256_c(bone_block_base, worldIn, blockpos)) 
 	            		{
-		            			worldIn.setBlockState(blockpos, bone_block_base);
+		            			worldIn.setBlockState(blockpos, bone_block_base.with(RotatedPillarBlock.AXIS, blockstate.get(RotatedPillarBlock.AXIS)));
 	            		}
 	            	}
 	            }

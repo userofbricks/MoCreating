@@ -4,10 +4,13 @@ import java.util.Random;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.IPlantable;
 
 public class NetherMycelium extends SpreadableNetherMyceliumBlock
 {
@@ -29,4 +32,12 @@ public class NetherMycelium extends SpreadableNetherMyceliumBlock
 	    }
 
 	}
+	
+	@Override
+	public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction facing, IPlantable plantable) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	
 }

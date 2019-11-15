@@ -4,9 +4,12 @@ import java.util.Random;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
 
 public class WitheredMycelium extends Mycelium
 {
@@ -25,6 +28,12 @@ public class WitheredMycelium extends Mycelium
 		} else {
 		return false;
 		}
+	}
+	
+	@Override
+	public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction facing, IPlantable plantable) {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 	public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
