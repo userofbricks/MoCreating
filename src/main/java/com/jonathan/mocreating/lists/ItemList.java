@@ -54,4 +54,6 @@ public class ItemList
 	public static Item mycelium_stripped_spruce_log;
 	
 	public static Item mycelium_withered_soulsand;
+	
+	public static Item mycelium_dirt;
 }

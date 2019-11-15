@@ -91,6 +91,7 @@ public class MoCreating
 					ItemList.mycelium_stripped_birch_log 	= new BlockItem(BlockList.mycelium_stripped_birch_log, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_stripped_birch_log.getRegistryName()),
 					
 					ItemList.mycelium_withered_soulsand		= new BlockItem(BlockList.mycelium_withered_soulsand,		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_withered_soulsand.getRegistryName()),
+					ItemList.mycelium_dirt 					= new BlockItem(BlockList.mycelium_dirt, 					new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.mycelium_dirt.getRegistryName()),
 					
 					//items
 					ItemList.nether_dust 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("nether_dust")),
@@ -149,7 +150,8 @@ public class MoCreating
 				BlockList.mycelium_stripped_acacia_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_acacia_log")),
 				BlockList.mycelium_stripped_birch_log 		= new MyceliumLog(MaterialColor.PURPLE, Block.Properties.create(Material.WOOD)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.NETHER_WART)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mycelium_stripped_birch_log")),
 				
-				BlockList.mycelium_withered_soulsand 		= new WitheredMycelium(Block.Properties.create(Material.SAND)	.tickRandomly()	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.SAND)	.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_withered_soulsand"))
+				BlockList.mycelium_withered_soulsand 		= new WitheredMycelium(Block.Properties.create(Material.SAND)	.tickRandomly()	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.SAND)			.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("mycelium_withered_soulsand")),
+				BlockList.mycelium_dirt 					= new Mycelium(Block.Properties.create(Material.EARTH)							.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL)).setRegistryName(location("mycelium_dirt"))
 			);
 			
 			LOGGER.info("Blocks registered.");
