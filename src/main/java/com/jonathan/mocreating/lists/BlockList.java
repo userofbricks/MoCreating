@@ -35,4 +35,22 @@ public class BlockList
 	public static Block mycelium_withered_soulsand;
 	
 	public static Block mycelium_dirt;
+	
+	public static Block grass_acacia_planks;
+	public static Block grass_birch_planks;
+	public static Block grass_dark_oak_planks;
+	public static Block grass_jungle_planks;
+	public static Block grass_oak_planks;
+	public static Block grass_spruce_planks;
+	
+	public static Block grass_sponge;
+	public static Block grass_wet_sponge;
+	public static Block grass_coarse_dirt;
+	public static Block grass_stone;
+	public static Block grass_andesite;
+	public static Block grass_diorite;
+	public static Block grass_granite;
+	public static Block grass_gravel;
+	public static Block grass_red_sand;
+	public static Block grass_sand;
 }

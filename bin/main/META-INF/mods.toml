@@ -10,13 +10,13 @@ authors="userofbricks"
 
 modId="mocreating" #mandatory
 
-version="0.3.20" #mandatory
+version="0.3.21" #mandatory
 
 displayName="MoCreating" #mandatory
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This Mod adds some crafting recipes for items that where previously uncraftable.
+This Mod adds some crafting recipes for items that where previously uncraftable. As well as adding thing to help you create more.
 '''
 
 [[dependencies.mocreating]] #optional

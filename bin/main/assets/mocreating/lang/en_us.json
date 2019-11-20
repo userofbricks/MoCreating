@@ -49,6 +49,24 @@
 	
 	"block.mocreating.mycelium_withered_soulsand": "Withered Mycelium",
 	
-	"block.mocreating.mycelium_dirt": "Mycelium"
+	"block.mocreating.mycelium_dirt": "Mycelium",
+	
+	"block.mocreating.grass_acacia_planks": "Grass Acacia Planks",
+	"block.mocreating.grass_birch_planks": "Grass Birch Planks",
+	"block.mocreating.grass_dark_oak_planks": "Grass Dark Oak Planks",
+	"block.mocreating.grass_jungle_planks": "Grass Jungle Planks",
+	"block.mocreating.grass_oak_planks": "Grass Oak Planks",
+	"block.mocreating.grass_spruce_planks": "Grass Spruce Planks",
+	
+	"block.mocreating.grass_coarse_dirt": "Grass Coarse Dirt",
+	"block.mocreating.grass_sponge": "Grass Sponge",
+	"block.mocreating.grass_wet_sponge": "Grass Wet Sponge",
+	"block.mocreating.grass_stone": "Grass Stone",
+	"block.mocreating.grass_andesite": "Grass Andesite",
+	"block.mocreating.grass_diorite": "Grass Diorite",
+	"block.mocreating.grass_granite": "Grass Granite",
+	"block.mocreating.grass_gravel": "Grass Gravel",
+	"block.mocreating.grass_red_sand": "Grass Red Sand",
+	"block.mocreating.grass_sand": "Grass Sand"
 	
 }

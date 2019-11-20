@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/sand"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/sand" }
+	}
+}

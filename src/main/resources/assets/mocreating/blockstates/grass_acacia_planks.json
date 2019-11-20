@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/acacia_planks"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/acacia_planks" }
+	}
+}

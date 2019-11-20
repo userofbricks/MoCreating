@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/dark_oak_planks"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/dark_oak_planks" }
+	}
+}

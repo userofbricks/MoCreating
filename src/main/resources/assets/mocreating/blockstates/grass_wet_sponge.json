@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/wet_sponge"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/wet_sponge" }
+	}
+}

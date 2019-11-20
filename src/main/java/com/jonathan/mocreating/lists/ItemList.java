@@ -56,4 +56,22 @@ public class ItemList
 	public static Item mycelium_withered_soulsand;
 	
 	public static Item mycelium_dirt;
+	
+	public static Item grass_acacia_planks;
+	public static Item grass_birch_planks;
+	public static Item grass_dark_oak_planks;
+	public static Item grass_jungle_planks;
+	public static Item grass_oak_planks;
+	public static Item grass_spruce_planks;
+	
+	public static Item grass_sponge;
+	public static Item grass_wet_sponge;
+	public static Item grass_coarse_dirt;
+	public static Item grass_stone;
+	public static Item grass_andesite;
+	public static Item grass_diorite;
+	public static Item grass_granite;
+	public static Item grass_gravel;
+	public static Item grass_red_sand;
+	public static Item grass_sand;
 }
