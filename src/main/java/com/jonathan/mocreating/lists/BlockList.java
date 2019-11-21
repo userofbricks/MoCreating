@@ -53,4 +53,7 @@ public class BlockList
 	public static Block grass_gravel;
 	public static Block grass_red_sand;
 	public static Block grass_sand;
+	
+	public static Block mushroom_red;
+	public static Block mushroom_brown;
 }

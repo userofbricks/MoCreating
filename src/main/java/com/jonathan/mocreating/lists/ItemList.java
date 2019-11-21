@@ -74,4 +74,7 @@ public class ItemList
 	public static Item grass_gravel;
 	public static Item grass_red_sand;
 	public static Item grass_sand;
+	
+	public static Item mushroom_red;
+	public static Item mushroom_brown;
 }

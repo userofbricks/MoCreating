@@ -67,6 +67,9 @@
 	"block.mocreating.grass_granite": "Grass Granite",
 	"block.mocreating.grass_gravel": "Grass Gravel",
 	"block.mocreating.grass_red_sand": "Grass Red Sand",
-	"block.mocreating.grass_sand": "Grass Sand"
+	"block.mocreating.grass_sand": "Grass Sand",
+	
+	"block.mocreating.mushroom_red": "Red Mushroom",
+	"block.mocreating.mushroom_brown": "Brown Mushroom"
 	
 }

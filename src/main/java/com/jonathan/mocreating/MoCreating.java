@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.jonathan.mocreating.block.Grass;
+import com.jonathan.mocreating.block.Mushroom;
 import com.jonathan.mocreating.block.MyceliumLog;
 import com.jonathan.mocreating.block.NetherMycelium;
 import com.jonathan.mocreating.block.WitheredMycelium;
@@ -114,6 +115,9 @@ public class MoCreating
 					ItemList.grass_red_sand = new BlockItem(BlockList.grass_red_sand, 	new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.grass_red_sand.getRegistryName()),
 					ItemList.grass_sand 	= new BlockItem(BlockList.grass_sand, 		new Item.Properties()	.group(ItemGroup.BUILDING_BLOCKS))	.setRegistryName(BlockList.grass_sand.getRegistryName()),
 					
+					ItemList.mushroom_red 	= new BlockItem(BlockList.mushroom_red, 	new Item.Properties()	.group(ItemGroup.DECORATIONS))	.setRegistryName(BlockList.mushroom_red.getRegistryName()),
+					ItemList.mushroom_brown = new BlockItem(BlockList.mushroom_brown, 	new Item.Properties()	.group(ItemGroup.DECORATIONS))	.setRegistryName(BlockList.mushroom_brown.getRegistryName()),
+					
 					
 					//items
 					ItemList.nether_dust 	= new Item(new Item.Properties()	.group(ItemGroup.MISC))	.setRegistryName(location("nether_dust")),
@@ -191,7 +195,10 @@ public class MoCreating
 				BlockList.grass_granite 		= new Grass(Block.Properties.create(Material.ROCK)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.PICKAXE))	.setRegistryName(location("grass_granite")),
 				BlockList.grass_gravel 			= new Grass(Block.Properties.create(Material.SAND)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("grass_gravel")),
 				BlockList.grass_red_sand 		= new Grass(Block.Properties.create(Material.SAND)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("grass_red_sand")),
-				BlockList.grass_sand 			= new Grass(Block.Properties.create(Material.EARTH)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("grass_sand"))
+				BlockList.grass_sand 			= new Grass(Block.Properties.create(Material.EARTH)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.WET_GRASS)		.harvestTool(ToolType.SHOVEL))	.setRegistryName(location("grass_sand")),
+				
+				BlockList.mushroom_red 		= new Mushroom(Block.Properties.create(Material.MISCELLANEOUS)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.PLANT)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mushroom_red")),
+				BlockList.mushroom_brown 	= new Mushroom(Block.Properties.create(Material.MISCELLANEOUS)	.hardnessAndResistance(2.0f, 15.0f)	.sound(SoundType.PLANT)	.harvestTool(ToolType.AXE))	.setRegistryName(location("mushroom_brown"))
 			);
 			
 			LOGGER.info("Blocks registered.");
