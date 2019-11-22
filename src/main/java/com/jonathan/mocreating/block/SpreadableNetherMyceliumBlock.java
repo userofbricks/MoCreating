@@ -44,39 +44,70 @@ public class SpreadableNetherMyceliumBlock extends SnowyDirtBlock
 		if (!worldIn.isRemote) {
 			if (!worldIn.isAreaLoaded(pos, 3)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
 	        if (!func_220257_b(state, worldIn, pos)) {
-	        	worldIn.setBlockState(pos, Blocks.NETHERRACK.getDefaultState());
+	        	if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_netherrack) 			{ worldIn.setBlockState(pos, Blocks.NETHERRACK.getDefaultState()); 			}
+	        	else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_nether_quartz) 	{ worldIn.setBlockState(pos, Blocks.NETHER_QUARTZ_ORE.getDefaultState()); 	}
+	        	else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_nether_wart) 		{ worldIn.setBlockState(pos, Blocks.NETHER_WART_BLOCK.getDefaultState()); 	}
+	        	
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_acacia_planks) 	{ worldIn.setBlockState(pos, Blocks.ACACIA_PLANKS.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_birch_planks)		{ worldIn.setBlockState(pos, Blocks.BIRCH_PLANKS.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_dark_oak_planks)	{ worldIn.setBlockState(pos, Blocks.DARK_OAK_PLANKS.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_jungle_planks) 	{ worldIn.setBlockState(pos, Blocks.JUNGLE_PLANKS.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_oak_planks)		{ worldIn.setBlockState(pos, Blocks.OAK_PLANKS.getDefaultState()); 			}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_spruce_planks) 	{ worldIn.setBlockState(pos, Blocks.SPRUCE_PLANKS.getDefaultState()); 		}
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_acacia_log) 		{ worldIn.setBlockState(pos, Blocks.ACACIA_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_birch_log) 		{ worldIn.setBlockState(pos, Blocks.BIRCH_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_dark_oak_log) 		{ worldIn.setBlockState(pos, Blocks.DARK_OAK_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_jungle_log) 		{ worldIn.setBlockState(pos, Blocks.JUNGLE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_oak_log) 			{ worldIn.setBlockState(pos, Blocks.OAK_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_spruce_log) 		{ worldIn.setBlockState(pos, Blocks.SPRUCE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_acacia_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_ACACIA_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_birch_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_BIRCH_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_dark_oak_log) { worldIn.setBlockState(pos, Blocks.STRIPPED_DARK_OAK_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_jungle_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_JUNGLE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_oak_log) 		{ worldIn.setBlockState(pos, Blocks.STRIPPED_OAK_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_spruce_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_SPRUCE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_sponge) 				{ worldIn.setBlockState(pos, Blocks.SPONGE.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_wet_sponge) 			{ worldIn.setBlockState(pos, Blocks.WET_SPONGE.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_coarse_dirt) 			{ worldIn.setBlockState(pos, Blocks.COARSE_DIRT.getDefaultState()); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_dirt) 					{ worldIn.setBlockState(pos, Blocks.DIRT.getDefaultState()); 		}
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_bone_block) 			{ worldIn.setBlockState(pos, Blocks.BONE_BLOCK.getDefaultState().with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+	        	
 	        } else {
 	            if (worldIn.getLight(pos.up()) >= 6) {
-	            	BlockState netherrack = BlockList.mycelium_netherrack.getDefaultState();
-	            	BlockState nether_quartz = BlockList.mycelium_nether_quartz.getDefaultState();
-	            	BlockState nether_wart = BlockList.mycelium_nether_wart.getDefaultState();
-	            	BlockState soulsand = BlockList.mycelium_withered_soulsand.getDefaultState();
+	            	BlockState netherrack = 	BlockList.mycelium_netherrack.getDefaultState();
+	            	BlockState nether_quartz = 	BlockList.mycelium_nether_quartz.getDefaultState();
+	            	BlockState nether_wart = 	BlockList.mycelium_nether_wart.getDefaultState();
+	            	BlockState soulsand = 		BlockList.mycelium_withered_soulsand.getDefaultState();
 	            	
-	            	BlockState acacia_planks = BlockList.mycelium_acacia_planks.getDefaultState();
-	            	BlockState birch_planks = BlockList.mycelium_birch_planks.getDefaultState();
-	            	BlockState dark_oak_planks = BlockList.mycelium_dark_oak_planks.getDefaultState();
-	            	BlockState jungle_planks = BlockList.mycelium_jungle_planks.getDefaultState();
-	            	BlockState oak_planks = BlockList.mycelium_oak_planks.getDefaultState();
-	            	BlockState spruce_planks = BlockList.mycelium_spruce_planks.getDefaultState();
+	            	BlockState acacia_planks = 		BlockList.mycelium_acacia_planks.getDefaultState();
+	            	BlockState birch_planks = 		BlockList.mycelium_birch_planks.getDefaultState();
+	            	BlockState dark_oak_planks = 	BlockList.mycelium_dark_oak_planks.getDefaultState();
+	            	BlockState jungle_planks = 		BlockList.mycelium_jungle_planks.getDefaultState();
+	            	BlockState oak_planks = 		BlockList.mycelium_oak_planks.getDefaultState();
+	            	BlockState spruce_planks = 		BlockList.mycelium_spruce_planks.getDefaultState();
 	            	
-	            	BlockState acacia_log_base = BlockList.mycelium_acacia_log.getDefaultState();
-	            	BlockState birch_log_base = BlockList.mycelium_birch_log.getDefaultState();
-	            	BlockState dark_oak_log_base = BlockList.mycelium_dark_oak_log.getDefaultState();
-	            	BlockState jungle_log_base = BlockList.mycelium_jungle_log.getDefaultState();
-	            	BlockState oak_log_base = BlockList.mycelium_oak_log.getDefaultState();
-	            	BlockState spruce_log_base = BlockList.mycelium_spruce_log.getDefaultState();
+	            	BlockState acacia_log_base = 	BlockList.mycelium_acacia_log.getDefaultState();
+	            	BlockState birch_log_base = 	BlockList.mycelium_birch_log.getDefaultState();
+	            	BlockState dark_oak_log_base = 	BlockList.mycelium_dark_oak_log.getDefaultState();
+	            	BlockState jungle_log_base = 	BlockList.mycelium_jungle_log.getDefaultState();
+	            	BlockState oak_log_base = 		BlockList.mycelium_oak_log.getDefaultState();
+	            	BlockState spruce_log_base = 	BlockList.mycelium_spruce_log.getDefaultState();
 	            	
-	            	BlockState stripped_acacia_log_base = BlockList.mycelium_stripped_acacia_log.getDefaultState();
-	            	BlockState stripped_birch_log_base = BlockList.mycelium_stripped_birch_log.getDefaultState();
+	            	BlockState stripped_acacia_log_base = 	BlockList.mycelium_stripped_acacia_log.getDefaultState();
+	            	BlockState stripped_birch_log_base = 	BlockList.mycelium_stripped_birch_log.getDefaultState();
 	            	BlockState stripped_dark_oak_log_base = BlockList.mycelium_stripped_dark_oak_log.getDefaultState();
-	            	BlockState stripped_jungle_log_base = BlockList.mycelium_stripped_jungle_log.getDefaultState();
-	            	BlockState stripped_oak_log_base = BlockList.mycelium_stripped_oak_log.getDefaultState();
-	            	BlockState stripped_spruce_log_base = BlockList.mycelium_stripped_spruce_log.getDefaultState();
+	            	BlockState stripped_jungle_log_base = 	BlockList.mycelium_stripped_jungle_log.getDefaultState();
+	            	BlockState stripped_oak_log_base = 		BlockList.mycelium_stripped_oak_log.getDefaultState();
+	            	BlockState stripped_spruce_log_base = 	BlockList.mycelium_stripped_spruce_log.getDefaultState();
 
-	            	BlockState sponge = BlockList.mycelium_sponge.getDefaultState();
-	            	BlockState wet_sponge = BlockList.mycelium_wet_sponge.getDefaultState();
-	            	BlockState bone_block_base = BlockList.mycelium_bone_block.getDefaultState();
-	            	BlockState coarse_dirt = BlockList.mycelium_coarse_dirt.getDefaultState();
+	            	BlockState sponge = 			BlockList.mycelium_sponge.getDefaultState();
+	            	BlockState wet_sponge = 		BlockList.mycelium_wet_sponge.getDefaultState();
+	            	BlockState bone_block_base = 	BlockList.mycelium_bone_block.getDefaultState();
+	            	BlockState coarse_dirt = 		BlockList.mycelium_coarse_dirt.getDefaultState();
 	            	
 	            	BlockState dirt = BlockList.mycelium_dirt.getDefaultState();
 

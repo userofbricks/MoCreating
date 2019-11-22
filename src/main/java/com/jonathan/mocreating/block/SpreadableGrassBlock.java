@@ -43,7 +43,25 @@ public class SpreadableGrassBlock extends SnowyDirtBlock
 		if (!worldIn.isRemote) {
 			if (!worldIn.isAreaLoaded(pos, 3)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
 	        if (!func_220257_b(state, worldIn, pos)) {
-	        	worldIn.setBlockState(pos, Blocks.NETHERRACK.getDefaultState());
+	        	worldIn.setBlockState(pos, Blocks.DIRT.getDefaultState());
+	        	
+	        	if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_acacia_planks) 		{ worldIn.setBlockState(pos, Blocks.ACACIA_PLANKS.getDefaultState()); 	}
+	        	else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_birch_planks) 	{ worldIn.setBlockState(pos, Blocks.BIRCH_PLANKS.getDefaultState());  	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_dark_oak_planks) 	{ worldIn.setBlockState(pos, Blocks.DARK_OAK_PLANKS.getDefaultState()); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_jungle_planks) 	{ worldIn.setBlockState(pos, Blocks.JUNGLE_PLANKS.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_oak_planks) 		{ worldIn.setBlockState(pos, Blocks.OAK_PLANKS.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_spruce_planks) 	{ worldIn.setBlockState(pos, Blocks.SPRUCE_PLANKS.getDefaultState()); 	}
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_sponge)  		{ worldIn.setBlockState(pos, Blocks.SPONGE.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_wet_sponge)  	{ worldIn.setBlockState(pos, Blocks.WET_SPONGE.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_coarse_dirt)  { worldIn.setBlockState(pos, Blocks.COARSE_DIRT.getDefaultState()); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_stone)  		{ worldIn.setBlockState(pos, Blocks.STONE.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_andesite) 	{ worldIn.setBlockState(pos, Blocks.ANDESITE.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_diorite) 		{ worldIn.setBlockState(pos, Blocks.DIORITE.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_granite)  	{ worldIn.setBlockState(pos, Blocks.GRANITE.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_gravel)  		{ worldIn.setBlockState(pos, Blocks.GRAVEL.getDefaultState()); 		}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_red_sand)  	{ worldIn.setBlockState(pos, Blocks.RED_SAND.getDefaultState()); 	}
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.grass_sand)  		{ worldIn.setBlockState(pos, Blocks.SAND.getDefaultState()); 		}
 	        } else {
 	            if (worldIn.getLight(pos.up()) >= 6) {
 	            	BlockState acacia_planks = BlockList.grass_acacia_planks.getDefaultState();
