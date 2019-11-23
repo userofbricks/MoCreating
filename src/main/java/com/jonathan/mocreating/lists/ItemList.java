@@ -77,4 +77,32 @@ public class ItemList
 	
 	public static Item mushroom_red;
 	public static Item mushroom_brown;
+	
+	public static Item vine_acacia;
+	public static Item vine_birch;
+	public static Item vine_dark_oak;
+	public static Item vine_jungle;
+	public static Item vine_oak;
+	public static Item vine_spruce;
+	
+	public static Item dragon_egg_white;
+	public static Item dragon_egg_red;
+	public static Item dragon_egg_blue;
+	public static Item dragon_egg_green;
+	public static Item dragon_egg_yellow;
+	public static Item dragon_egg_brown;
+	public static Item dragon_egg_pink;
+	public static Item dragon_egg_purple;
+	public static Item dragon_egg_black;
+	public static Item dragon_egg_light_blue;
+	
+	public static Item leaver_andesite;
+	public static Item leaver_diorite;
+	public static Item leaver_granite;
+	public static Item leaver_acacia;
+	public static Item leaver_birch;
+	public static Item leaver_dark_oak;
+	public static Item leaver_jungle;
+	public static Item leaver_oak;
+	public static Item leaver_spruce;
 }

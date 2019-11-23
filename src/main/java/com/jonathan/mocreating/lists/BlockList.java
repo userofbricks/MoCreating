@@ -56,4 +56,32 @@ public class BlockList
 	
 	public static Block mushroom_red;
 	public static Block mushroom_brown;
+	
+	public static Block vine_acacia;
+	public static Block vine_birch;
+	public static Block vine_dark_oak;
+	public static Block vine_jungle;
+	public static Block vine_oak;
+	public static Block vine_spruce;
+	
+	public static Block dragon_egg_white;
+	public static Block dragon_egg_red;
+	public static Block dragon_egg_blue;
+	public static Block dragon_egg_green;
+	public static Block dragon_egg_yellow;
+	public static Block dragon_egg_brown;
+	public static Block dragon_egg_pink;
+	public static Block dragon_egg_purple;
+	public static Block dragon_egg_black;
+	public static Block dragon_egg_light_blue;
+	
+	public static Block leaver_andesite;
+	public static Block leaver_diorite;
+	public static Block leaver_granite;
+	public static Block leaver_acacia;
+	public static Block leaver_birch;
+	public static Block leaver_dark_oak;
+	public static Block leaver_jungle;
+	public static Block leaver_oak;
+	public static Block leaver_spruce;
 }

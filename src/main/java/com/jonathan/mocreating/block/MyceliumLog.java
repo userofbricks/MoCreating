@@ -68,7 +68,20 @@ public class MyceliumLog extends LogBlock
 		if (!worldIn.isRemote) {
 			if (!worldIn.isAreaLoaded(pos, 3)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
 	        if (!func_220257_b(state, worldIn, pos)) {
-	        	worldIn.setBlockState(pos, Blocks.NETHERRACK.getDefaultState());
+	        	if (worldIn.getBlockState(pos).getBlock() 	   == BlockList.mycelium_acacia_log) 		{ worldIn.setBlockState(pos, Blocks.ACACIA_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_birch_log) 		{ worldIn.setBlockState(pos, Blocks.BIRCH_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_dark_oak_log) 		{ worldIn.setBlockState(pos, Blocks.DARK_OAK_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_jungle_log) 		{ worldIn.setBlockState(pos, Blocks.JUNGLE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_oak_log) 			{ worldIn.setBlockState(pos, Blocks.OAK_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_spruce_log) 		{ worldIn.setBlockState(pos, Blocks.SPRUCE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_acacia_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_ACACIA_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_birch_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_BIRCH_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_dark_oak_log) { worldIn.setBlockState(pos, Blocks.STRIPPED_DARK_OAK_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_jungle_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_JUNGLE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_oak_log) 		{ worldIn.setBlockState(pos, Blocks.STRIPPED_OAK_LOG.getDefaultState()		.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		else if (worldIn.getBlockState(pos).getBlock() == BlockList.mycelium_stripped_spruce_log) 	{ worldIn.setBlockState(pos, Blocks.STRIPPED_SPRUCE_LOG.getDefaultState()	.with(RotatedPillarBlock.AXIS, worldIn.getBlockState(pos).get(RotatedPillarBlock.AXIS))); }
+        		
 	        } else {
 	            if (worldIn.getLight(pos.up()) >= 6) {
 	            	BlockState netherrack = BlockList.mycelium_netherrack.getDefaultState();
