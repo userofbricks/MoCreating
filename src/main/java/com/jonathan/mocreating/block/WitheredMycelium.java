@@ -39,10 +39,10 @@ public class WitheredMycelium extends Mycelium
 	public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
 		if (!worldIn.isRemote) {
 			if (!worldIn.isAreaLoaded(pos, 3)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light and spreading
-			if (!air_up(worldIn, pos) && worldIn.getBlockState(pos.up()).getBlock() != Blocks.POPPY) {
+			if (air_up(worldIn, pos) && worldIn.getBlockState(pos.up()).getBlock() != Blocks.POPPY) {
 				return;
 	        } else {
-	        	if (worldIn.getLight(pos.up()) <= 7) {
+	        	if (worldIn.getLight(pos.up()) <= 5 && worldIn.getBlockState(pos.up()).getBlock() == Blocks.POPPY) {
 	        		BlockState blockstate1 = Blocks.WITHER_ROSE.getDefaultState();
 	        		int chance = random.nextInt(20);
 	        		BlockPos blockpos = pos.up();

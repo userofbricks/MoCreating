@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/jungle_planks"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/jungle_planks" }
+	}
+}

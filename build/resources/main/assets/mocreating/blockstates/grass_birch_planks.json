@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"snowy=false": { "model": "mocreating:block/grass/birch_planks"},
+        "snowy=true":  { "model": "mocreating:block/grass/snowy/birch_planks" }
+	}
+}
